@@ -1,2 +1,32 @@
-$font-family: 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic',
+$font-family: 'Montserrat', sans-serif, 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic',
   'Meiryo', sans-serif;
+
+
+  .h-24{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 138.4%;
+    display: flex;
+    align-items: center;
+    color: #0B0B0B;
+  }
+
+  .h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110.4%;
+    display: flex;
+    align-items: center;
+    color: #0B0B0B;
+  }
+
+  .h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B0B0B;
+    margin-bottom: 30px;
+  }

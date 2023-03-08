@@ -1,2 +1,68 @@
+@use '../helpers' as h;
+
 .c-btn {
+    color: inherit;
+}
+
+.btn{
+    border-radius: 60px;
+    padding: 15px 25px;
+
+}
+
+.btn.btn-red{
+    border: 1px solid h.$second-accent;
+    // border-color: h.$second-accent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+    &:hover{
+        background-color: h.$second-accent; 
+        color: #fff;
+        svg{
+            path{
+                fill: #fff;
+            }
+        }
+      }
+
+}
+
+
+.btn.btn-yellow{
+    border-radius: 30px;
+    background-color: rgba(237, 190, 70, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #0B0B0B;
+    max-width: fit-content;
+    padding: 15px 53px;
+    transition: all ease 0.3s;
+    &:hover{
+        background-color: rgba(255, 231, 123, 1);
+    }
+}
+
+.btn.btn-green{
+    border-radius: 30px;
+    background-color: rgba(26, 152, 79, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-width: fit-content;
+    padding: 15px 53px;
+    transition: all ease 0.3s;
+    &:hover{
+        background-color: rgba(7, 184, 84, 1)
+    }
 }
