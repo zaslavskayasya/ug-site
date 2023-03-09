@@ -13,6 +13,12 @@
         max-width: 302px;
         margin-bottom: 71px;;
     }
+
+    
+    .container-big, .content {
+      z-index: 5;
+      position: relative;
+    }
 }
 
 
@@ -174,7 +180,9 @@
 .left-prom{
     display: flex;;
 }
-
+.info-prom{
+  padding-bottom: 80px;;
+}
 .prom-item{
     border-radius: 10px;
     padding: 58px 18px;
@@ -231,4 +239,129 @@
     img{
         width: 100%;
     }
+}
+
+.back-img{
+  position: absolute;
+  z-index: 0;
+}
+
+.back-img-left{
+  top: 30%;
+  left: 0px;
+}
+
+
+.back-img-bottom {
+  bottom: -420px;
+  right: -100px;
+}
+
+
+#mobile-car{
+  display: none;;
+}
+
+@media screen and (max-width: 1600px ){
+  #car{   
+    right: 118px;
+    top: 246px;
+  }
+  #machanism{
+    right: -494px;
+  }
+  #back {
+    right: -300px;
+  }
+}
+
+@media screen and (max-width: 1200px ){
+  #car{   
+    right: 8px;
+
+  }
+  #machanism{
+    right: -590px;
+  }
+  #back {
+    right: -400px;
+  }
+}
+
+
+@media screen and (max-width: 1100px ){
+  #car{   
+    right: -98px;
+
+  }
+  .often-find-wrap {
+    width: 1200px;
+    overflow-y: scroll;
+    // mouse-wheel:horizontal;
+  }
+  .often-find-item{
+    margin-right: 25px;
+    margin-bottom: 15px;;;
+  }
+  .slick-slide {
+    margin: 12px 15px;
+  }
+
+
+}
+
+@media screen and (max-width: 990px ){
+  #car{   
+    right: -178px;
+  }
+
+}
+
+
+@media screen and (max-width: 950px ){
+  #car{   
+    display: none;
+  }
+  #machanism{
+    display: none;
+  }
+  #back {
+    display: none;
+  }
+  #mobile-car{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+  }
+
+}
+
+@media screen and (max-width: 670px){
+  .wrap-main-screen {
+    padding: 2px 0 100px;
+  }
+  #mobile-car {
+    top: 98px;
+}
+  .l-main .h-24 {
+    max-width: 300px;
+  }
+  .l-main .h-24 {
+    margin-bottom: 34px;
+  }
+  .l-main .h1 {
+    margin-bottom: 28px;
+  }
+  .pluses-li {
+    margin-bottom: 15px;
+    padding: 25px 18px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 390px){
+  #mobile-car {
+    top: 198px;
+}
 }

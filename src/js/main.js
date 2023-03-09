@@ -140,6 +140,7 @@ $('.sale-hits-slider').slick({
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
+              rows: 2,
               infinite: true,
               dots: false,
             }
@@ -185,3 +186,4 @@ addToCartTrigger.addEventListener('click', function(e){
   console.log(e.target);
 })
 
+new WOW().init();

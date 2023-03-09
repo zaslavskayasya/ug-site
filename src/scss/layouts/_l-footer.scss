@@ -1,2 +1,80 @@
+@use '../helpers' as h;
+@use '../components' ;
+
 .l-footer {
+    padding: 80px 0px 60px;
+    // background-color: #EEEEEE;
+    position: relative;
+    .content{
+
+        z-index: 5;
+    }
+}
+
+.footer-top-item-name{
+    margin-bottom: 25px;
+}
+
+.footer-top{
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    &-link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px; 
+        transition: all ease 0.3s;
+        svg{
+            margin-right: 15px;
+            max-width : 22px; ;
+        }
+        &:hover{
+            color: h.$second-accent;
+        }
+    }
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid #D2D2D2;
+    align-items: center;
+    .copy{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+    }
+    .copy-mart{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        color: #828282;
+        cursor: pointer;
+        a{
+            text-decoration: underline;
+
+        }
+        &:hover{
+            a{
+
+                color: h.$second-accent;
+            }
+        }
+    }
+    .socials{
+        display: flex;
+        &-li{
+            margin-right: 10px;
+            &:hover{
+                filter: contrast(2);
+            }
+        }
+    }
 }
