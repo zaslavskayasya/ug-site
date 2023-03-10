@@ -187,3 +187,15 @@ addToCartTrigger.addEventListener('click', function(e){
 })
 
 new WOW().init();
+
+
+let oftenSlider = document.querySelector('.often-find-wrap');
+
+$('.often-find-wrap').slick({
+  dots: false,
+  infinite: true,
+  slidesToShow: 9,
+  slidesToScroll: 2,
+  margin: 10,
+  arrows: false,
+});
