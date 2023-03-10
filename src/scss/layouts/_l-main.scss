@@ -435,7 +435,7 @@
     padding: 57px 30px;
     height: 243px;
     width: 336px;;
-    margin: 20px auto 57px;;
+    margin: 20px auto 67px;;
     .btn.btn-green{
       margin: auto;;
     }
@@ -453,7 +453,13 @@
   }
   .wrap-main-screen {
     padding: 2px 0 118px;
-}
+  }
+  .l-footer{
+    .btn.btn-red{
+      width: 100%;
+    }
+
+  }
 }
 
 
