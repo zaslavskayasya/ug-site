@@ -81,7 +81,7 @@ body.active-right{
       right: -27px;
       top: -51px;
       width: 60px;
-      background-image: url(../../img/icons/arrow-right.svg);  
+      background-image: url(../img/icons/arrow-right.svg);  
       opacity: 0.8;    
       &:hover{
         opacity: 1; 
@@ -97,7 +97,7 @@ body.active-right{
       right: 27px;
       top: -51px;
       width: 60px;     
-      background-image: url(../../img/icons/arrow-right.svg);
+      background-image: url(../img/icons/arrow-right.svg);
       transform: rotate(-180deg);   
       opacity: 0.8;  
       &:hover{
