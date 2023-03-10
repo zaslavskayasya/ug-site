@@ -308,15 +308,36 @@
   .slick-slide {
     margin: 12px 15px;
   }
-
+  .mens-promo-wrap {
+    max-width: 375px;
+  }
 
 }
+
+@media screen and (max-width: 1020px){
+  .mens-promo-wrap {
+    max-width: 325px;
+  }
+}
+
+
 
 @media screen and (max-width: 990px ){
   #car{   
     right: -178px;
   }
 
+}
+
+
+@media screen and (max-width: 960px){
+  .prom-wrap{
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-2 {
+    padding-top: 0px;
+}
 }
 
 
@@ -336,7 +357,21 @@
     right: 0px;
     top: 100px;
   }
-
+  .footer-top-item{
+    width: 300px;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+  .footer-top{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .back-img-bottom {
+    display: none;;
+  }
+  .back-img-left {
+    display: none;;
+  }
 }
 
 @media screen and (max-width: 670px){
@@ -359,7 +394,57 @@
     margin-bottom: 15px;
     padding: 25px 18px;
     width: 100%;
-}
+  }
+  .left-prom{
+    flex-direction: column;
+  }
+  .mens-promo-wrap {
+    max-width: 280px;
+  }
+  .mens-promo-wrap {
+      max-width: 280px;
+  }
+  .prom-item {
+    margin: 0px auto 25px;
+
+  }
+  .left-prom{
+    margin-bottom: 25px;;
+  }
+  .column-1 {
+    margin-right: 0px;
+  }
+  .l-footer {
+    padding: 40px 0 35px;
+  }
+  .footer-bottom{
+    flex-direction: column;
+  }
+  .footer-bottom .copy, .footer-bottom .copy-mart{
+    margin-bottom: 15px;;
+  }
+  .footer-bottom .socials{
+    margin-bottom: 15px;;
+  }
+  .choose {
+    background-color: #EDBE46;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/illustrations/ad-bg-mob.jpg);
+    padding: 57px 30px;
+    height: 243px;
+    width: 336px;;
+    margin: 20px auto;
+    .btn.btn-green{
+      margin: auto;;
+    }
+  }
+  .choose-name {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 390px){

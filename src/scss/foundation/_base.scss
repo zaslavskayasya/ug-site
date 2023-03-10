@@ -233,7 +233,8 @@ body.active-right{
       font-size: 14px;
     }
     .card .prices .old-price {
-      font-size: 9px
+      font-size: 9px;
+      line-height: 12px;;
     }
     .add-to-cart {
       height: 21px;
@@ -248,5 +249,27 @@ body.active-right{
 @media screen and (max-width: 700px){
   .slick-slide {
     margin: 0px 3px;
+    }
+    .card .card-img-wrap {
+      max-width: 117px;
+    }
 }
+
+@media screen and (max-width: 345px){
+  .card {
+      min-width: 150px;
+  }
+  .prices{
+    display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+  }
+  .choose{
+    width: 100%;
+  }
+  .sale-hits{
+    padding-bottom: 25px;
+  }
 }

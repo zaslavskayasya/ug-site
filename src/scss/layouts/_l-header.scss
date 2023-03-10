@@ -769,16 +769,18 @@ form.search-bar:valid a {
 @media screen and (max-width: 780px) {
   .sidenav {
     width: 100%;
+    z-index: 9999999;
   }
 
+
   .menu-line {
-    background-color: #fff;
+    background-color: transparent;
     height: 60px;
     margin-bottom: 15px;
   }
 
   .cart-amount {
-    border: 3px solid #fff;
+    border: 3px solid #eee;
   }
 
   .l-header {
@@ -803,9 +805,7 @@ form.search-bar:valid a {
     padding: 1px 7px;
   }
 
-  .menu-line {
-    background-color: transparent;
-  }
+
 }
 
 @media screen and (max-width: 580px) {
