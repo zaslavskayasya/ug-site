@@ -13,6 +13,10 @@ body {
    background-color: #eee;;
 }
 
+.wrapper{
+  overflow-x: hidden;
+}
+
 body.active-left{
   .l-header, .l-main, .new-collection-block, .blackline{
     padding-left: 70px;
