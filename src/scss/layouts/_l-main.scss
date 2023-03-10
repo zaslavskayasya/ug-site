@@ -447,6 +447,16 @@
   }
 }
 
+@media screen and (max-width: 650px){
+  #mobile-car {
+      top: 155px;
+  }
+  .wrap-main-screen {
+    padding: 2px 0 118px;
+}
+}
+
+
 @media screen and (max-width: 390px){
   #mobile-car {
     top: 198px;
