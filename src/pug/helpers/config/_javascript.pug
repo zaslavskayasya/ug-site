@@ -2,3 +2,10 @@ script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
 script(src='./js/plugins/slick/slick.js')
 script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
 script(src=jsPath + "main.js" defer)
+
+if IsMain 
+    script(src="./js/main-page.js" defer)
+
+if Iscatalog
+    script(src="./js/noUiSlider/nouislider.min.js" defer)
+    script(src="./js/catalog.js" defer)
