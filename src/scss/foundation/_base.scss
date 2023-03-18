@@ -75,7 +75,12 @@ body.active-right{
   transition: all ease-in-out 0.1s;
   z-index: 20;
 }
-
+.slick-prev:before {
+  content: '';
+}
+.slick-next:before {
+  content: '';
+}
 .side-custom-arrows{
   .slick-next{
       background-repeat: no-repeat;
@@ -83,7 +88,7 @@ body.active-right{
       height: 20px;
       position: absolute;
       right: -27px;
-      top: -51px;
+      top: -43px;
       width: 60px;
       background-image: url(../img/icons/arrow-right.svg);  
       opacity: 0.8;    
@@ -111,6 +116,12 @@ body.active-right{
       }
   }    
 }
+
+.side-custom-arrows .slick-prev{
+  right: 50px;
+  left:auto;
+}
+
 
 
 .card {
@@ -152,6 +163,7 @@ body.active-right{
   .card-img-wrap{
       max-width: 215px;
       margin: 24px auto 25px;;
+      transition: all ease 0.3s;;
   }
   .card-name{
     font-style: normal;
@@ -161,6 +173,7 @@ body.active-right{
     text-align: center;
     color: #6F7682;
     margin-bottom: 15px;
+    transition: all ease 0.3s;
   }
   .bottom-info {
     display: flex;
@@ -205,7 +218,16 @@ body.active-right{
 }
 
 .card:hover {
-  .add-to-cart{
+  .card-img-wrap{
+    transform: translateY(-6px);
+  }
+  .card-name{
+    color: #000;
+  }
+
+}
+
+  .add-to-cart:hover{
     background-color: #1A984F;
     svg {
       path {
@@ -213,7 +235,6 @@ body.active-right{
       }
     }
   }
-}
 
 .slick-initialized .slick-slide {
   display: block;
@@ -315,15 +336,72 @@ body.active-right{
         height:10px;;
       }
   }
+  .content {
+    max-width: 900px;
+  }
 }
 
-@media screen and (max-width: 700px){
+
+@media screen and (max-width:920px){
+  .content{
+    max-width: 760px;
+    padding: 0px 25px;
+  }
+  // .sale-hits-slider{
+  //   width: 400px;
+  //   margin: 0 auto;
+  // }
+
+}
+
+@media screen and (max-width: 800px){
   .slick-slide {
-    margin: 0px 3px;
+    margin: 0px 8px;
     }
     .card .card-img-wrap {
       max-width: 117px;
     }
+
+
+}
+
+@media screen and (max-width: 600px ){
+  .sale-hits-slider{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 365px ){
+  .sale-hits-slider{
+    max-width: 300px;
+    margin: 0 auto;
+    .card {
+      margin: 10px auto;
+    }
+    .slick-list {
+       margin: 0 0px;
+       padding: 0px;
+    }
+  }
+  .choose{
+    width: 291px;
+    padding: 40px 17px;
+    height: 200px;
+  }
+  .choose-name {
+
+    font-size: 26px;
+  }
+  .season-slider{
+    max-width: 300px;
+    margin: 0 auto;
+    .slick-list {
+      margin: 0 0px;
+      padding: 0px;
+   }
+  }
+
 }
 
 @media screen and (max-width: 345px){
@@ -342,5 +420,12 @@ body.active-right{
   }
   .sale-hits{
     padding-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width:780px){
+  .hide-mob{
+    display: none;
   }
 }

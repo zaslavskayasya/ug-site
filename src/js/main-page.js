@@ -15,19 +15,19 @@ let backMechanic= document.querySelector('#machanism');
 let backYellow = document.querySelector('#back');
 
 document.addEventListener('mousemove', function(e){
-  let ivalueX= (e.pageX * -1 / 45);
+  // let ivalueX= (e.pageX * -1 / 45);
   let ivalueY= (e.pageY * -1 / 40);
-  let cvalueX= (e.pageX * -1 / 70);
+  // let cvalueX= (e.pageX * -1 / 70);
   let cvalueY= (e.pageY * -1 / 90);
 
-  let bvalueX= (e.pageX * -1 / 40);
+  // let bvalueX= (e.pageX * -1 / 40);
   let bvalueY= (e.pageY * -1 / 35);
 
 
-  console.log('ok');
-  carImg.style.transform = 'translate3d('+ivalueX+'px,'+ivalueY+'px, 0)' ;
-  backMechanic.style.transform = 'translate3d('+cvalueX+'px,'+cvalueY+'px, 0)';
-  backYellow.style.transform = 'translate3d('+bvalueX+'px,'+bvalueY+'px, 0)';
+  console.log(ivalueY);
+  carImg.style.transform = 'translateY('+ivalueY+'px)' ;
+  backMechanic.style.transform = 'translateY('+cvalueY+'px)';
+  backYellow.style.transform = 'translateY('+bvalueY+'px)';
 })
 
 
@@ -55,10 +55,20 @@ $('.sale-hits-slider').slick({
           }
         },
         {
-            breakpoint: 890,
+            breakpoint: 600,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
+              rows: 2,
+              infinite: true,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 365,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
               rows: 2,
               infinite: true,
               dots: false,
@@ -88,8 +98,26 @@ $('.season-slider').slick({
       {
           breakpoint: 890,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2,
+            infinite: true,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 365,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
           }

@@ -45,7 +45,7 @@
   }
   #machanism{
     position: absolute;
-    right: -294px;
+    right: 0px;
     top: -208px;
 
     z-index: 4;
@@ -53,7 +53,7 @@
 
   #back {
     position: absolute;
-    right: -100px;
+    right: 0px;
     top: 0px;
     z-index: 3;
   }
@@ -130,14 +130,29 @@
   .often-find {
     margin-bottom: 50px;;
   }
+.often-find-item{
+  padding-top: 10px;;
+  transition: all ease 0.4s;
+  .often-find-link{
+    transition: all ease 0.4s;
 
+  }
+}
+ .often-find-item:hover {
+   .often-find-link{
+    display: block;
+    transform: translateY(-6px);
+    transition: all ease 0.4s;
+  }
+ }
+  
   .often-find-link:hover{
     .often-find-name{
         color: h.$second-accent;
     }
-    img{
-        transform: scale(1.1);
-    }
+    // img{
+    //     transform: scale(1.1);
+    // }
   }
 
   .sale-hits{
@@ -185,12 +200,17 @@
 .info-prom{
   padding-bottom: 80px;;
 }
+.prom-img-wrap{
+  transition: all ease-in 0.3s;
+}
+
 .prom-item{
     border-radius: 10px;
     padding: 58px 18px;
     width: 281px;
     height: 284px;;
     margin-bottom: 25px;
+    display: block;
     &.blue{
         background-color: #007CC3;
     }
@@ -206,6 +226,14 @@
             color: #000036;
         }
     }
+    &:hover{
+      .prom-img-wrap{
+        transform: translateY(-6px);
+      }
+      .prom-text{
+        transform: translateY(-6px);
+      }
+    }
 
 }
 
@@ -216,6 +244,7 @@
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
+    transition: all ease-in 0.3s;
    
 }
 
@@ -256,7 +285,7 @@
 
 .back-img-bottom {
   bottom: -420px;
-  right: -100px;
+  right: 0px;
 }
 
 
@@ -270,10 +299,10 @@
     top: 246px;
   }
   #machanism{
-    right: -494px;
+    // right: -494px;
   }
   #back {
-    right: -300px;
+    // right: -300px;
   }
 }
 
@@ -283,10 +312,14 @@
 
   }
   #machanism{
-    right: -590px;
+    right: -190px;
   }
   #back {
-    right: -400px;
+    right: -200px;
+  }
+  .container-big {
+    width: 1088px;
+    max-width: 1088px;;
   }
 }
 
@@ -309,17 +342,14 @@
     margin: 12px 15px;
   }
   .mens-promo-wrap {
-    max-width: 375px;
+    max-width: 265px;
+  }
+  .container-big {
+    max-width: 100%;
+    padding: 0px 25px;
   }
 
 }
-
-@media screen and (max-width: 1020px){
-  .mens-promo-wrap {
-    max-width: 325px;
-  }
-}
-
 
 
 @media screen and (max-width: 990px ){
@@ -337,7 +367,8 @@
   }
   .column-2 {
     padding-top: 0px;
-}
+  }
+
 }
 
 
@@ -372,6 +403,7 @@
   .back-img-left {
     display: none;;
   }
+
 }
 
 @media screen and (max-width: 670px){
