@@ -24,7 +24,7 @@ document.addEventListener('mousemove', function(e){
   let bvalueY= (e.pageY * -1 / 35);
 
 
-  console.log(ivalueY);
+  
   carImg.style.transform = 'translateY('+ivalueY+'px)' ;
   backMechanic.style.transform = 'translateY('+cvalueY+'px)';
   backYellow.style.transform = 'translateY('+bvalueY+'px)';

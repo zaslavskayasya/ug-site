@@ -213,6 +213,7 @@ option{
     margin-bottom: 50px;
     .card{
         margin-bottom: 19px;;
+        padding-top: 30px;;
         &:not(:nth-child(4)){
             margin-right: 19px;;
         }
@@ -764,6 +765,10 @@ option{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      .card{
+        min-width: 259px;
+        width: initial;
+      }
   }
   .filter-item {
       margin-bottom: 12px;
@@ -798,4 +803,12 @@ option{
   .wrap-catalog-block .card:nth-child(2) {
     margin-right: 0px;
   }
+  .wrap-catalog-block {
+
+    .card{
+      max-width: 201px;
+      min-width: auto;
+      margin: 0px 10px 10px;
+    }
+}
 }
