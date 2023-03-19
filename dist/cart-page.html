@@ -136,6 +136,243 @@
         </div>
       </div>
     </header>
+    <div class="cart-page-block">
+      <div class="content">
+        <div class="breadcrumps"> <a class="back-to-main" href="#"> <img src="./img/icons/arrow-left.svg" alt=""><span>Повернутись до головної</span></a></div>
+        <div class="cart-page-name">Кошик </div>
+        <div class="wrap-ware">
+          <div class="table-of-orders active">
+            <div class="panel">
+              <div class="order-table">
+                <div class="order-table-header">
+                  <div class="table-column column-1 table-articul"> </div>
+                  <div class="table-column column-2 photo"> </div>
+                  <div class="table-column column-3 name">Назва</div>
+                  <div class="table-column column-5 price">Ціна</div>
+                  <div class="table-column column-4 numbers">Кількість</div>
+                  <div class="table-column column-6 sum">Сума</div>
+                  <div class="table-column column-7 del"> </div>
+                </div>
+                <div class="order-table-inner dashed ware-item">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>1</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/1.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
+                  <div class="table-column column-5 price"> <span class="originPrice">400</span><span>₴ </span></div>
+                  <div class="table-column column-4 numbers">
+                    <div class="counter-wrap">
+                      <div class="counter-nav counter-minus"> </div>
+                      <div class="counter-number">1</div>
+                      <div class="counter-nav counter-plus"></div>
+                    </div>
+                  </div>
+                  <div class="table-column column-6 sum"> <span class="placeForPrice">400</span><span>₴ </span></div>
+                  <div class="table-column column-7 del">
+                    <div class="delete-img"></div>
+                  </div>
+                </div>
+                <div class="order-table-inner dashed ware-item">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>1</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/2.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
+                  <div class="table-column column-5 price"> <span class="originPrice">400</span><span>₴ </span></div>
+                  <div class="table-column column-4 numbers">
+                    <div class="counter-wrap">
+                      <div class="counter-nav counter-minus"> </div>
+                      <div class="counter-number">1</div>
+                      <div class="counter-nav counter-plus"></div>
+                    </div>
+                  </div>
+                  <div class="table-column column-6 sum"> <span class="placeForPrice">300</span><span>₴ </span></div>
+                  <div class="table-column column-7 del">
+                    <div class="delete-img"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="total-place"><img src="./img/icons/greenbag.svg" alt=""><span>Всього на суму:</span><span class="finalSum">0 </span><span>₴</span></div>
+            </div>
+          </div>
+          <div class="wrap-ware-item only-mobile-card">
+            <div class="total-sum-info">
+              <p class="numberOfwares"><span class="ware-number-mob">3 </span><span class="ware-for-sum">товара на суму</span></p>
+              <p class="totalSum"> <span class="ware-calc-sum-mob">3600</span><span>грн </span></p>
+            </div>
+            <div class="total-sum-info">
+              <p class="numberOfwares"><span>3нижка</span></p>
+              <p class="totalSale"><span class="ware-calc-sum-mob">190</span><span>грн</span></p>
+            </div>
+            <div class="resultInfo">
+              <p class="to-pay">Разом до сплати</p>
+              <p class="totaly-sum"><span class="finalSum-mob">3 999</span><span>грн</span></p>
+            </div>
+          </div>
+          <div class="wrap-ware-item register-order">
+            <div class="left-part">
+              <p class="ware-block-name">ОФОРМЛЕННЯ ЗАМОВЛЕННЯ
+              <form class="order-wrap">
+                <div class="order-part">
+                  <p class="order-header">Ваші контактні дані</p>
+                  <div class="field-wrap">
+                    <div class="order-input">
+                      <label for="lastName">Прізвище*</label>
+                      <input type="text" name="lastName">
+                    </div>
+                    <div class="order-input">
+                      <label for="firstName">Ім'я*</label>
+                      <input type="text" name="firstName">
+                    </div>
+                    <div class="order-input">
+                      <label for="phoneNumber">Мобільний телефон*</label>
+                      <input type="tel" name="phoneNumber">
+                    </div>
+                    <div class="order-input">
+                      <label for="e-mail">Електронна пошта</label>
+                      <input type="e" name="e-mail">
+                    </div>
+                  </div>
+                </div>
+                <div class="order-part">
+                  <p class="order-header">Доставка</p>
+                  <div class="field-wrap">
+                    <div class="order-input">
+                      <label class="select-label" for="sendType">Спосіб доставки</label>
+                      <select id="sendType" name="sendType">
+                        <option value="novaPoshta">Нова пошта</option>
+                        <option value="ukrPoshta">Укрпошта </option>
+                        <option value="ukrPoshta">Укрпошта </option>
+                      </select>
+                    </div>
+                    <div class="order-input">
+                      <label class="select-label" for="region">Область</label>
+                      <select id="region" name="region">
+                        <option value="Odeka">Одеська</option>
+                        <option value="Kyivska">Київська</option>
+                        <option value="Vinnicka">Вінницька</option>
+                      </select>
+                    </div>
+                    <div class="order-input">
+                      <label class="select-label" for="city">Місто</label>
+                      <select id="city" name="city">
+                        <option value="Odesa">Одеса</option>
+                        <option value="Kyiv">Київ</option>
+                        <option value="Vinnica">Вінниця </option>
+                      </select>
+                    </div>
+                    <div class="order-input">
+                      <label class="select-label" for="postOffice">Відділення</label>
+                      <select id="postOffice" name="citpostOfficey">
+                        <option value="">№1 Небесної сотні 9а</option>
+                        <option value="Kyiv">№2 проспект перемоги</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-part">
+                  <p class="order-header">Оплата </p>
+                  <div class="field-wrap wrap-checkradio">
+                    <div class="radio-block">
+                      <label class="label-radio">Оплата при отриманні <input type="radio" name="radio"><span class="checkmark radio-btns"></span>
+                      </label>
+                      <label class="label-radio">Повна передоплата (NovaPay) <input type="radio" name="radio"><span class="checkmark radio-btns"></span>
+                      </label>
+                    </div>
+                    <div class="check-block">
+                      <label class="wrap-checkbox">Не дзвоніть мені для уточнення замовлення <input type="checkbox" name="checkbox"><span class="checkmark"></span>
+                      </label>
+                      <label class="wrap-checkbox">Хочу зареєструватися <input type="checkbox" name="checkbox"><span class="checkmark"> </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              </p>
+            </div>
+            <div class="right-part">
+              <div class="wrap-ware-item total-sum-block">
+                <div class="total-sum-info">
+                  <p class="numberOfwares"><span class="ware-number">3 </span><span class="ware-for-sum">товара на суму</span></p>
+                  <p class="totalSum"> <span class="ware-calc-sum">3600</span><span>грн </span></p>
+                </div>
+                <div class="total-sum-info">
+                  <p class="numberOfwares"><span>3нижка </span></p>
+                  <p class="totalSale"><span class="ware-calc-sum">190</span><span>грн</span></p>
+                </div>
+                <div class="resultInfo">
+                  <p class="to-pay">Разом до сплати</p>
+                  <p class="totaly-sum"><span class="finalSum2">3 999</span><span>грн </span></p>
+                </div>
+                <button class="btn btn-green">Купити </button>
+                <p class="agree"> Підтверджуючи замовлення, Ви приймаєте <a href="#">умови користувальницької угоди</a></p>
+                <p class="pay-for-send"><span>Доставка орієнтовно </span><span class="send-pay">190</span><span>грн</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="last-seen-block">
+          <h3 class="h3 block-name">Хіт продаж</h3>
+          <div class="last-seen side-custom-arrows"><a class="card" href="# "><span class="action">акція</span>
+              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
+              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+              <div class="bottom-info">
+                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+                <div class="add-to-cart">
+                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
+                  </svg>
+                </div>
+              </div>
+            </a><a class="card" href="# "><span class="action">акція</span>
+              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
+              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+              <div class="bottom-info">
+                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+                <div class="add-to-cart">
+                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
+                  </svg>
+                </div>
+              </div>
+            </a><a class="card" href="# "><span class="action">акція</span>
+              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
+              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+              <div class="bottom-info">
+                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+                <div class="add-to-cart">
+                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
+                  </svg>
+                </div>
+              </div>
+            </a><a class="card" href="# "><span class="action">акція</span>
+              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
+              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+              <div class="bottom-info">
+                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+                <div class="add-to-cart">
+                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
+                  </svg>
+                </div>
+              </div>
+            </a><a class="card" href="# "><span class="action">акція</span>
+              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
+              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+              <div class="bottom-info">
+                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+                <div class="add-to-cart">
+                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
+                  </svg>
+                </div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+    </div>
     <footer class="l-footer">
       <div class="content">
         <div class="footer-top">

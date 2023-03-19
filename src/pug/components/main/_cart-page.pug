@@ -1,0 +1,256 @@
+.cart-page-block
+    .content
+        .breadcrumps 
+            a(href="#").back-to-main 
+                img(src="./img/icons/arrow-left.svg", alt="")
+                span Повернутись до головної
+        .cart-page-name Кошик     
+        .wrap-ware
+            .table-of-orders.active
+                .panel
+                    .order-table
+                        .order-table-header 
+                            .table-column.column-1.table-articul
+                                | 
+                            .table-column.column-2.photo 
+                            .table-column.column-3.name Назва
+                            .table-column.column-5.price Ціна
+                            .table-column.column-4.numbers Кількість
+                            .table-column.column-6.sum Сума
+                            .table-column.column-7.del 
+
+                        .order-table-inner.dashed.ware-item
+                            .table-column.column-1.table-articul
+                                span.only-mob-info Артикул
+                                span 1
+                            .table-column.column-2.photo
+                                img(src="./img/illustrations/often/1.png", alt="")
+                            .table-column.column-3.name 
+                                 a(href="#") ABRO Антигель - 47 946мл/568л
+                            .table-column.column-5.price 
+                                //- span.only-mob-info Ціна
+                                span.originPrice 400
+                                span ₴                       
+                            .table-column.column-4.numbers 
+                                //- span.only-mob-info Кількість
+                                .counter-wrap 
+                                    .counter-nav.counter-minus 
+                                    .counter-number 1
+                                    .counter-nav.counter-plus
+                            .table-column.column-6.sum 
+                                //- span.only-mob-info Кількість
+                                span.placeForPrice 400
+                                span ₴  
+                            .table-column.column-7.del
+                                .delete-img
+                        .order-table-inner.dashed.ware-item
+                            .table-column.column-1.table-articul
+                                span.only-mob-info Артикул
+                                span 1
+                            .table-column.column-2.photo
+                                img(src="./img/illustrations/often/2.png", alt="")
+                            .table-column.column-3.name 
+                                 a(href="#") ABRO Антигель - 47 946мл/568л
+                            .table-column.column-5.price 
+                                //- span.only-mob-info Ціна
+                                span.originPrice 400
+                                span ₴                       
+                            .table-column.column-4.numbers 
+                                //- span.only-mob-info Кількість
+                                .counter-wrap 
+                                    .counter-nav.counter-minus 
+                                    .counter-number 1
+                                    .counter-nav.counter-plus
+                            .table-column.column-6.sum 
+                                //- span.only-mob-info Кількість
+                                span.placeForPrice 300
+                                span ₴  
+                            .table-column.column-7.del
+                                .delete-img
+                    div.total-place
+                        img(src="./img/icons/greenbag.svg", alt="")
+                        span Всього на суму:
+                        span.finalSum 0 
+                        span ₴
+
+            .wrap-ware-item.only-mobile-card
+                .total-sum-info
+                    p.numberOfwares
+                        span.ware-number-mob 3 
+                        span.ware-for-sum товара на суму
+                    p.totalSum 
+                        span.ware-calc-sum-mob 3600
+                        span грн 
+                .total-sum-info
+                    p.numberOfwares
+                        span 3нижка
+                    p.totalSale
+                        span.ware-calc-sum-mob 190
+                        span грн
+                .resultInfo
+                    p.to-pay Разом до сплати
+                    p.totaly-sum
+                        span.finalSum-mob 3 999
+                        span грн
+                 
+            .wrap-ware-item.register-order
+                .left-part
+                    p.ware-block-name ОФОРМЛЕННЯ ЗАМОВЛЕННЯ  
+                        form.order-wrap 
+                            .order-part
+                                p.order-header Ваші контактні дані
+                                .field-wrap
+                                    .order-input
+                                        label(for="lastName") Прізвище*
+                                        input(type="text" name="lastName")
+                                    .order-input
+                                        label(for="firstName") Ім'я*
+                                        input(type="text" name="firstName")
+                                    .order-input
+                                        label(for="phoneNumber") Мобільний телефон*
+                                        input(type="tel" name="phoneNumber")
+                                    .order-input
+                                        label(for="e-mail") Електронна пошта
+                                        input(type="e" name="e-mail")
+                            .order-part
+                                p.order-header Доставка
+                                .field-wrap
+                                    .order-input
+                                        label.select-label(for="sendType") Спосіб доставки
+                                        select#sendType(name="sendType")
+                                            option(value="novaPoshta") Нова пошта
+                                            option(value="ukrPoshta") Укрпошта 
+                                            option(value="ukrPoshta") Укрпошта 
+                                    .order-input
+                                        label.select-label(for="region") Область
+                                        select#region(name="region") 
+                                            option(value="Odeka") Одеська
+                                            option(value="Kyivska") Київська
+                                            option(value="Vinnicka") Вінницька
+                                    .order-input
+                                        label.select-label(for="city") Місто
+                                        select#city(name="city") 
+                                            option(value="Odesa") Одеса
+                                            option(value="Kyiv") Київ
+                                            option(value="Vinnica") Вінниця 
+                                    .order-input
+                                        label.select-label(for="postOffice") Відділення
+                                        select#postOffice(name="citpostOfficey") 
+                                            option(value="") №1 Небесної сотні 9а
+                                            option(value="Kyiv") №2 проспект перемоги
+                            .order-part
+                                p.order-header Оплата 
+                                .field-wrap.wrap-checkradio
+                                    .radio-block
+                                        label.label-radio() Оплата при отриманні
+                                            input(type="radio" name="radio" ) 
+                                            span.checkmark.radio-btns
+                                        label.label-radio() Повна передоплата (NovaPay)
+                                            input(type="radio" name="radio") 
+                                            span.checkmark.radio-btns
+                                    .check-block    
+                                        label.wrap-checkbox Не дзвоніть мені для уточнення замовлення
+                                            input(type="checkbox" name="checkbox") 
+                                            span.checkmark
+                                        label.wrap-checkbox Хочу зареєструватися
+                                            input(type="checkbox" name="checkbox") 
+                                            span.checkmark    
+                .right-part 
+                    .wrap-ware-item.total-sum-block 
+                        .total-sum-info
+                            p.numberOfwares
+                                span.ware-number 3 
+                                span.ware-for-sum товара на суму
+                            p.totalSum 
+                                span.ware-calc-sum 3600
+                                span грн 
+                        .total-sum-info
+                            p.numberOfwares
+                                span 3нижка                        
+                            p.totalSale
+                                span.ware-calc-sum 190
+                                span грн
+                        .resultInfo 
+                            p.to-pay Разом до сплати
+                            p.totaly-sum
+                                span.finalSum2 3 999
+                                span грн    
+                        button.btn.btn-green Купити 
+                        p.agree 
+                            | Підтверджуючи замовлення, Ви приймаєте 
+                            a(href="#") умови користувальницької угоди
+                        p.pay-for-send
+                            span Доставка орієнтовно 
+                            span.send-pay 190
+                            span грн
+        .last-seen-block
+            h3.h3.block-name Хіт продаж
+            .last-seen.side-custom-arrows
+                a(href="# ").card
+                    span.action акція
+                    .card-img-wrap 
+                        img(src="./img/illustrations/oli1.png", alt="oli").card-img
+                    p.card-name Master Synt 4T 10W-30 API SL/CF 1л генераторне
+                    .bottom-info
+                        .prices 
+                            span.new-price 156.00 ₴
+                            span.old-price 765.00 ₴
+                        .add-to-cart  
+                            svg(width='29' height='24' viewbox='0 0 29 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='round')
+                                path(class="inner-path" d='M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='square')
+                a(href="# ").card
+                    span.action акція
+                    .card-img-wrap 
+                        img(src="./img/illustrations/oli1.png", alt="oli").card-img
+                    p.card-name Master Synt 4T 10W-30 API SL/CF 1л генераторне
+                    .bottom-info
+                        .prices 
+                            span.new-price 156.00 ₴
+                            span.old-price 765.00 ₴
+                        .add-to-cart  
+                            svg(width='29' height='24' viewbox='0 0 29 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='round')
+                                path(class="inner-path" d='M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='square')
+                a(href="# ").card
+                    span.action акція
+                    .card-img-wrap 
+                        img(src="./img/illustrations/oli1.png", alt="oli").card-img
+                    p.card-name Master Synt 4T 10W-30 API SL/CF 1л генераторне
+                    .bottom-info
+                        .prices 
+                            span.new-price 156.00 ₴
+                            span.old-price 765.00 ₴
+                        .add-to-cart  
+                            svg(width='29' height='24' viewbox='0 0 29 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='round')
+                                path(class="inner-path" d='M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='square')
+                a(href="# ").card
+                    span.action акція
+                    .card-img-wrap 
+                        img(src="./img/illustrations/oli1.png", alt="oli").card-img
+                    p.card-name Master Synt 4T 10W-30 API SL/CF 1л генераторне
+                    .bottom-info
+                        .prices 
+                            span.new-price 156.00 ₴
+                            span.old-price 765.00 ₴
+                        .add-to-cart  
+                            svg(width='29' height='24' viewbox='0 0 29 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='round')
+                                path(class="inner-path" d='M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='square')
+                a(href="# ").card
+                    span.action акція
+                    .card-img-wrap 
+                        img(src="./img/illustrations/oli1.png", alt="oli").card-img
+                    p.card-name Master Synt 4T 10W-30 API SL/CF 1л генераторне
+                    .bottom-info
+                        .prices 
+                            span.new-price 156.00 ₴
+                            span.old-price 765.00 ₴
+                        .add-to-cart  
+                            svg(width='29' height='24' viewbox='0 0 29 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='round')
+                                path(class="inner-path" d='M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005' stroke='#1A984F' stroke-width='1.21079' stroke-miterlimit='10' stroke-linecap='square')
+                
+
+
