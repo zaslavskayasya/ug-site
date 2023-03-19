@@ -130,6 +130,14 @@
   .often-find {
     margin-bottom: 50px;;
   }
+  .often-find-link{
+    .often-find-img-wrap{
+      transition: all ease 0.4s;
+
+    }
+
+  }
+
 .often-find-item{
   padding-top: 10px;;
   transition: all ease 0.4s;
@@ -138,9 +146,15 @@
 
   }
 }
+
+
+.often-find-name{
+  transition: all ease 0.4s;
+}
+
  .often-find-item:hover {
-   .often-find-link{
-    display: block;
+   .often-find-img, .often-find-name{
+    // display: block;
     transform: translateY(-6px);
     transition: all ease 0.4s;
   }
