@@ -350,7 +350,7 @@
     right: 10px;
     width: 25px;
     height: 25px;
-    background-image: url('../img/icons/arrow-ch.svg');
+    background-image: url('../img/icons/arrow-down.svg');
     background-repeat: no-repeat;
     background-position: center;
     pointer-events: none;
@@ -659,32 +659,34 @@
     .order-table-header, .order-table-inner{
         align-items: center;
     }
-    .table-articul{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        align-items: center;
-        color: #BEBEBE;
-
-    }
     .photo{
         max-width: 60px;
     }
-    .name, .price, .sum, .numbers {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        align-items: center;
-        color: #0B0B0B;
-    }
-    .order-table-header .name,
-    .order-table-header  .price,
-    .order-table-header .numbers,
-    .order-table-header .sum {
-        font-weight: 400;
-    }
+}
+.table-articul{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    color: #BEBEBE;
+
+}
+.name, .price, .sum, .numbers {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    color: #0B0B0B;
+}
+.order-table-header .table-articul,
+.order-table-header .name,
+.order-table-header  .price,
+.order-table-header .numbers,
+.order-table-header .sum {
+    font-weight: 400;
+    color: #000
 }
 
 
@@ -731,6 +733,29 @@
 @media screen and (max-width: 780px ){
     .cart-page-block .cart-page-name {
         display: none;
+    }
+    .order-table .order-table-header{
+        display: none;
+    }
+    .table-column.column-1.table-articul{
+        display: none;
+    }
+    .table-column.column-5.price{
+        display: none;
+    }
+    .table-of-orders.table-column.column-4{
+        display: none;
+        width: 0px;;
+    }
+    .name{
+        position: absolute;
+        left: 100px; 
+        top: 20px;
+    }
+    .del{
+        position: absolute;
+        right: 0px;
+        top: 0px;
     }
     .counter-wrap {
         position: absolute;

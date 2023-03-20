@@ -55,9 +55,6 @@ const clearInput = () => {
 const searchForm = document.querySelector('.search-bar');
 
 
-
-
-
 let headercartTrigger = document.querySelectorAll('.cart-trigger');
 let closeRightSidebar2 = document.querySelector('.closeCart');
 let RightSideCart = document.querySelector('.cart-right');
@@ -108,3 +105,26 @@ overflowDarken.addEventListener('click', ()=>{
    body.classList.remove('active-right');
   
 });
+
+
+
+
+let cabinetInfoTrigger = document.querySelector('.person-icon');
+let headerFind = document.querySelector('.logged');
+
+let bigPlace = document.querySelector('.right-menu-info');
+
+
+// // let cabinetStayActive = document.querySelector('.personal-cabinet');
+
+if(headerFind){
+
+  cabinetInfoTrigger.addEventListener("mouseover", (e)=>{
+    // console.log(e.target.parentNode)
+    headerFind.classList.add('active');
+  });
+  bigPlace.addEventListener("mouseleave", (e)=>{
+    // console.log(e.target.parentNode)
+    headerFind.classList.remove('active');
+  });
+};

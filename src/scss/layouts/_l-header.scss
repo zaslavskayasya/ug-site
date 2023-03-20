@@ -4,6 +4,16 @@
 .l-header {
   position: relative;
   z-index: 9;
+  &:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 94%;
+    position: absolute;
+    bottom: 0px;
+    left: 47px;
+    border-bottom: 1px solid #BEBEBE;
+  }
 }
 
 .menu-line {
@@ -15,7 +25,9 @@
   text-align: center;
   align-items: center;
   padding: 0 45px 0px 50px;
-  background: #fff;
+  position: relative;
+  // background: #fff;
+
 }
 
 .open-menu {
@@ -532,7 +544,7 @@ form.search-bar:valid a {
 .cart-amount {
   align-items: center;
   background-color: h.$accent-color;
-  border: 3px solid #fff;
+  border: 3px solid #eeeeee;
   border-radius: 100%;
   bottom: -5px;
   color: #fff;

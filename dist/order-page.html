@@ -34,8 +34,7 @@
     <script src="./js/plugins/slick/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/main.js" defer></script>
-    <script src="./js/noUiSlider/nouislider.min.js" defer></script>
-    <script src="./js/catalog.js" defer></script>
+    <script src="./js/order.js" defer></script>
   </head>
   <body class="logged" id="body">
     <div class="sidenav" id="mySidenav"><a class="closebtn closeLeftSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
@@ -142,319 +141,92 @@
         </div>
       </div>
     </header>
-    <div class="catalog-page">
-      <div class="wrapper">
-        <div class="content">
-          <div class="often-find wow fadeIn" data-wow-delay="0.4s">
-            <h3 class="h3 catalog-name">Yuko</h3>
-            <ul class="brand-popular-wrap brand-slider">
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil1.png" alt=""></div>
-                  <p class="brand-popular-name"> Моторні олії</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil2.png" alt=""></div>
-                  <p class="brand-popular-name"> Змащення автомобільні</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil3.png" alt=""></div>
-                  <p class="brand-popular-name"> Ланцюгові масла</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil1.png" alt=""></div>
-                  <p class="brand-popular-name"> Змащення автомобільні</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil3.png" alt=""></div>
-                  <p class="brand-popular-name"> Моторні олії</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil1.png" alt=""></div>
-                  <p class="brand-popular-name"> Моторні олії</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil2.png" alt=""></div>
-                  <p class="brand-popular-name"> Змащення автомобільні</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil3.png" alt=""></div>
-                  <p class="brand-popular-name"> Ланцюгові масла</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil1.png" alt=""></div>
-                  <p class="brand-popular-name"> Змащення автомобільні</p>
-                </a></li>
-              <li class="brand-popular-item"><a class="brand-popular-link" href="#">
-                  <div class="brand-popular-img-wrap"> <img class="often-find-img" src="./img/illustrations/brand/oil3.png" alt=""></div>
-                  <p class="brand-popular-name"> Моторні олії</p>
-                </a></li>
-            </ul>
+    <div class="cabinet-page">
+      <div class="content">
+        <div class="breadcrumps"> <a class="back-to-main" href="#"> <img src="./img/icons/arrow-left.svg" alt=""><span>Повернутись до головної</span></a></div>
+        <h3 class="catalog-name">Мої замовлення</h3>
+        <div class="table-all">
+          <div class="table-row names-of-all">
+            <div class="number t-item"> # </div>
+            <div class="date t-item">Дата</div>
+            <div class="sum t-item">Сума</div>
+            <div class="status t-item">Статус</div>
           </div>
-          <div class="wrp-filters">
-            <div class="filter-line">
-              <p class="filter-header">Об рано <span>4000 </span>товарів</p>
-              <div class="filter-item"> <img src="./img/icons/filteradd.svg" alt=""></div>
-              <div class="filter-item hide-mob" data-filterName="exist">
-                <p class="filter-item-name">Наявність</p><span class="num"> </span>
-              </div>
-              <div class="filter-item hide-mob" data-filterName="price">
-                <p class="filter-item-name">Цінa</p><span class="num"> </span>
-              </div>
-              <div class="filter-item hide-mob" data-filterName="capacity">
-                <p class="filter-item-name">Місткість</p><span class="num"> </span>
-              </div>
-              <div class="filter-item hide-mob" data-filterName="viscosity">
-                <p class="filter-item-name">В'язкість</p><span class="num"> </span>
-              </div>
+          <!--/ one order    -->
+          <div class="table-plate one-order">
+            <div class="table-row table-header accordion">
+              <div class="number t-item"> <span class="only-mob-info">#</span><span>630 </span></div>
+              <div class="date t-item"> <span class="only-mob-info">Дата</span><span>03.08.09</span></div>
+              <div class="sum t-item"> <span class="only-mob-info">Сума </span><span>494.51₴</span></div>
+              <!-- .status-road , .status-rejected , .status-done, .status-complect-->
+              <div class="status t-item status-road">В дорозі</div>
+              <div class="panel-status"> </div>
             </div>
-            <div class="sort-block">
-              <div class="sort-catalog"><img class="sort-img" src="../img/icons/arrow-down.svg" alt="">
-                <select id="sort" name="sort">
-                  <option value="cheap">Спочатку дешеві</option>
-                  <option value="expensive">Спочатку дорогі</option>
-                  <option value="new">Спочатку нові</option>
-                  <option value="old">Спочтаку старі</option>
-                  <option value="actions">Акційні</option>
-                </select>
+            <div class="panel">
+              <div class="order-table">
+                <div class="order-table-header">
+                  <div class="table-column column-1 table-articul">Артикул</div>
+                  <div class="table-column column-2 photo">Фото</div>
+                  <div class="table-column column-3 name">Назва</div>
+                  <div class="table-column column-4 numbers">Кількість</div>
+                  <div class="table-column column-5 price">Ціна</div>
+                </div>
+                <div class="order-table-inner dashed">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span class="art">23445</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/1.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
+                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість</span><span>1</span></div>
+                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
+                </div>
+                <div class="order-table-inner">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span class="art">23445</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/2.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">Масло</a></div>
+                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість </span><span>1 </span></div>
+                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
+                </div>
               </div>
+              <button class="btn btn-green">Відмінити замовлення </button>
             </div>
           </div>
-          <div class="wrap-catalog-block"> <a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
+          <!--/ one order    -->
+          <div class="table-plate one-order">
+            <div class="table-row table-header accordion">
+              <div class="number t-item"> <span class="only-mob-info">#</span><span>630 </span></div>
+              <div class="date t-item"> <span class="only-mob-info">Дата</span><span>03.08.09</span></div>
+              <div class="sum t-item"> <span class="only-mob-info">Сума </span><span>494.51₴</span></div>
+              <!-- .status-road , .status-rejected , .status-done, .status-complect-->
+              <div class="status t-item status-done">В дорозі</div>
+              <div class="panel-status"> </div>
+            </div>
+            <div class="panel">
+              <div class="order-table">
+                <div class="order-table-header">
+                  <div class="table-column column-1 table-articul">Артикул</div>
+                  <div class="table-column column-2 photo">Фото</div>
+                  <div class="table-column column-3 name">Назва</div>
+                  <div class="table-column column-4 numbers">Кількість</div>
+                  <div class="table-column column-5 price">Ціна</div>
                 </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
+                <div class="order-table-inner dashed">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>23445</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/1.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
+                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість</span><span>1</span></div>
+                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
                 </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
+                <div class="order-table-inner">
+                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>23445</span></div>
+                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/2.png" alt=""></div>
+                  <div class="table-column column-3 name"> <a href="#">Масло</a></div>
+                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість </span><span>1 </span></div>
+                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
                 </div>
+                <button class="button button-black">Відмінити замовлення </button>
               </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a><a class="card" href="# ">
-              <div class="wraps-tips"><span class="action">акція</span><span class="season">Сезон</span><span class="hit">хіт</span></div>
-              <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/oli1.png" alt="oli"></div>
-              <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-              <div class="bottom-info">
-                <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-                <div class="add-to-cart">
-                  <svg width="29" height="24" viewbox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.07758 6.6369C8.46572 6.6369 7.95001 7.09339 7.87575 7.70073L6.56446 18.4248C6.47622 19.1464 7.03931 19.7826 7.76629 19.7826H21.9082C22.6352 19.7826 23.1983 19.1464 23.11 18.4248L21.7987 7.70073C21.7245 7.09339 21.2088 6.6369 20.5969 6.6369H9.07758Z" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    <path class="inner-path" d="M18.213 8.28005C18.213 7.80023 18.213 5.66677 18.213 5.18695C18.213 3.26498 16.7019 1.70721 14.8374 1.70721C12.973 1.70721 11.4619 3.26498 11.4619 5.18695C11.4619 5.66677 11.4619 7.80023 11.4619 8.28005" stroke="#1A984F" stroke-width="1.21079" stroke-miterlimit="10" stroke-linecap="square"></path>
-                  </svg>
-                </div>
-              </div>
-            </a></div>
-          <div class="group-catalog-buttons">
-            <button class="empty-btn">Завантажити ще</button>
-            <div class="group-pages">
-              <button class="page-btn">1 </button>
-              <button class="page-btn active">2 </button>
-              <button class="disable" disabled>... </button>
-              <button class="page-btn">8</button>
-              <button class="page-btn">9 </button>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="filter-right"><a class="closebtn closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
-      <div class="catalog-filter-item">
-        <p class="filter-name">Фільтр</p>
-        <ul class="common-checks">
-          <li>
-            <label class="wrap-checkbox normal-text">Новинки <input type="checkbox" value="" name="" data-id=""><span class="checkmark"> </span>
-            </label>
-          </li>
-          <li>
-            <label class="wrap-checkbox normal-text">Акції <input type="checkbox" value="" name="" data-id=""><span class="checkmark"> </span>
-            </label>
-          </li>
-          <li>
-            <label class="wrap-checkbox normal-text">Хіти <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span>
-            </label>
-          </li>
-          <li>
-            <label class="wrap-checkbox normal-text">Сезоний товар <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span>
-            </label>
-          </li>
-          <li>
-            <label class="wrap-checkbox normal-text">Розпродаж <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="price-range catalog-filter-item" data-CatalogFilterName="price">
-        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Ціна<span class="open-close"></span></a>
-          <ul class="hidden-mobile-submenu">
-            <li>
-              <div class="slider-inputs">
-                <input id="input-with-keypress-0" type="text">
-                <input id="input-with-keypress-1" type="text">
-              </div>
-              <div id="steps-slider"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="catalog-filter-item" data-CatalogFilterName="exist">
-        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Наявність<span class="open-close"></span></a>
-          <ul class="hidden-mobile-submenu">
-            <li>
-              <label class="wrap-checkbox normal-text">В наявності <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span>
-              </label>
-            </li>
-            <li>
-              <label class="wrap-checkbox normal-text">Всі <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="catalog-filter-item" data-CatalogFilterName="capacity">
-        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Місткість, л<span class="open-close"></span></a>
-          <ul class="hidden-mobile-submenu">
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">(1)</span>
-              </label>
-            </li>
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
-              </label>
-            </li>
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="catalog-filter-item" data-CatalogFilterName="viscosity">
-        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">В'язкість по SAE<span class="open-close"></span></a>
-          <ul class="hidden-mobile-submenu">
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">1</span>
-              </label>
-            </li>
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
-              </label>
-            </li>
-            <li>
-              <label class="wrap-checkbox normal-text">1.1-4 <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="filter-btn">
-        <button class="btn btn-green">Застосувати</button>
-        <button class="btn btn-empty">Скинути</button>
       </div>
     </div>
     <footer class="l-footer">

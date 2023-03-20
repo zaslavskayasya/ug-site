@@ -158,7 +158,7 @@
 .prices{
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     .newPrice{
         font-style: normal;
         font-weight: 600;
@@ -180,7 +180,11 @@
         color: #6F7682;
     }
 }
-
+.one-item-wrap{
+    .prices{
+        margin-bottom: 40px;
+    }
+}
 .description-row {
     display: flex;
     align-items: baseline;
