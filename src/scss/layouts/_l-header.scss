@@ -754,9 +754,18 @@ form.search-bar:valid a {
   .brands-line-name {
     width: 228px;
   }
+  .l-header:after{
+    // display: none;
+    left: 15px;
+  }
   // .brands-line {
   //   flex-flow: wrap;
   // }
+  .logged.active .right-menu-info {
+    .cbinet-info-popup {
+      top:40px;
+    }
+  }
 }
 
 
