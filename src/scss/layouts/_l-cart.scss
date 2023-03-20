@@ -252,7 +252,7 @@
     width: 25px;
     display: block;
     height:25px;
-    background-image: url('../../img/icons/trash.svg');
+    background-image: url('../img/icons/trash.svg');
     background-size: cover;
     cursor: pointer;
     transition: all ease 0.3s;
@@ -911,6 +911,25 @@
     .breadcrumps{
         margin-bottom: 20px;;
     }
+    .order-table .column-2.photo img {
+        width: 100%;
+        position: absolute;
+        max-width: 58px;
+        left: 3px;
+        /* bottom: 9px; */
+        top: 23px;
+    }
+    .order-table {
+
+        margin: 15px;
+    }
+    .ware-item {
+        padding-bottom: 48px;
+        min-height: 155px;
+    }
+    .table-of-orders .panel{
+        padding-bottom: 0px;;
+    }
 }
 
 
@@ -922,6 +941,7 @@
     }
     .ware-item {
         padding-bottom: 48px;
+
     }
     .counter-wrap {
         width: 80px;
