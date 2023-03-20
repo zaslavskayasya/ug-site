@@ -977,6 +977,23 @@
 
 
 @media screen and (max-width: 690px) {
+    // .wrap-ware-item {
+    //     padding: 25px 0px;
+    // }
+    .wrap-ware, .wrap-ware-item.register-order {
+        flex-direction: column;
+        padding: 0;
+    }
+    .table-of-orders .table-column.column-4 {
+        left: 69px;
+    }
+    .cart-page-block .name {
+        left: 65px;
+    }
+    .table-of-orders .table-column.column-6 {
+
+        left: -17px;
+    }
     .ware-img {
         width: 80px;
         min-width: 80px;;
@@ -1050,4 +1067,13 @@
         max-width: 166px;
     }
     
+}
+
+@media screen and (max-width: 400px){
+    .delete-img {
+        bottom: auto;
+        max-width: 25px;
+        right: -31px;
+        top: 1px;
+    }
 }
