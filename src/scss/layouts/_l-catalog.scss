@@ -337,6 +337,7 @@ option{
     position: fixed;
     overflow: hidden;
     overflow: auto;
+    z-index: 999999;
   
     &.active{
         transform: translateX(0%);
