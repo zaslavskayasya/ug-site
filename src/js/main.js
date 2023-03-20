@@ -56,7 +56,7 @@ const searchForm = document.querySelector('.search-bar');
 
 
 let headercartTrigger = document.querySelectorAll('.cart-trigger');
-let closeRightSidebar2 = document.querySelector('.closeCart');
+let closeRightSidebar2 = document.querySelector('.closeRightSidebar2');
 let RightSideCart = document.querySelector('.cart-right');
 let cartTrigger = document.querySelectorAll('.addToCart');
 
@@ -64,6 +64,7 @@ let cartTrigger = document.querySelectorAll('.addToCart');
 console.log(headercartTrigger);
 
 headercartTrigger.forEach((triggerBtn)=>{
+  console.log('for cart');
   triggerBtn.addEventListener('click', (e)=>{
     RightSideCart.classList.add('active');
       overflowDarken.style.opacity = "1";
@@ -88,12 +89,13 @@ cartTrigger.forEach((triggerBtn)=>{
 })
 
 closeRightSidebar2.addEventListener('click', ()=>{
+  console.log('closeeee');
   RightSideCart.classList.remove('active');
   overflowDarken.style.opacity = "0";
   overflowDarken.style.height = "0";
-  overflowDarken.style.pointerEvents  = "none"; 
-   body.style.overflowY = "auto";
-   body.classList.remove('active-right');
+  overflowDarken.style.pointerEvents  = "none";    
+ body.style.overflowY = "auto";
+ body.classList.remove('active-right');
 });
 
 overflowDarken.addEventListener('click', ()=>{

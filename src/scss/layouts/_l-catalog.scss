@@ -321,7 +321,7 @@ option{
 
 
 
-.info-right, .cart-right{
+.info-right, .cart-right, .login-part{
     transition: all ease 0.3s;
     position: absolute;
     right: 0px;
@@ -347,7 +347,7 @@ option{
   
   .descr-name{
     font-style: normal;
-    font-weight: 500;
+    font-weight:700;
     font-size: 32px;
     line-height: 39px;
     color: #0B0B0B;
@@ -598,7 +598,7 @@ option{
 .filter-name {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     color: #0B0B0B;
