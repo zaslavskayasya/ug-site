@@ -747,12 +747,12 @@
         display: none;
         width: 0px;;
     }
-    .name{
+    .cart-page-block .name{
+        left: 78px;
         position: absolute;
-        left: 100px; 
-        top: 20px;
+        top: 2px;
     }
-    .del{
+    .cart-page-block .del{
         position: absolute;
         right: 0px;
         top: 0px;
@@ -827,6 +827,90 @@
         font-size: 16px;;
         margin-bottom: 35px;
     }
+    .table-of-orders .table-column.column-3 {
+        width: 180px;
+    }
+    .table-of-orders .table-column.column-6 {
+        width: 238px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .table-of-orders .table-column.column-4 {
+        left: 83px;
+        position: absolute;
+        top: 72px;
+        width: 300px;
+    }
+    .counter-nav, .counter-number {
+        font-size: 15px;
+        line-height: 33px;
+        font-weight: 600;
+    }
+    .order-table-inner {
+        align-items: center;
+        padding: 3px;
+    }
+    .table-of-orders .name, .table-of-orders .numbers, 
+    .table-of-orders .price, .table-of-orders .sum, 
+    .table-of-orders .table-articul{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .order-table{
+        border: none;
+    }
+    .counter-plus:after, .counter-plus:hover:after {
+        border-right: 1px solid #000;
+    }
+    .counter-minus:before, .counter-minus:hover:before, .counter-plus:before {
+        border-bottom: 1px solid #000;
+    }
+    .counter-minus:before, .counter-minus:hover:before, .counter-plus:before {
+        border-bottom: 1px solid #000;
+    }
+    .table-of-orders .table-column.column-6 {
+        bottom: -8px;
+        left: -4px;
+        position: absolute;
+        width: 238px;
+        span{
+            font-weight: 600;
+        }
+    }
+    .ware-item {
+        padding-bottom: 29px;
+        margin-top: 23px;
+    }
+    .order-table-inner.dashed:not(:last-child):after {
+        border-bottom: 1px solid #ddd;
+        bottom: -12px;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 9px;
+        position: absolute;
+        width: 94%;
+    }
+    .total-place{
+        display: none;
+    }
+    .wrap-ware, .wrap-ware-item.register-order{
+        flex-direction: column;
+    }
+    .only-mobile-card{
+        background: #fff;
+        border-radius: 10px;
+        padding: 35px;
+    }
+    .wrap-ware-item .left-part, .wrap-ware-item .right-part{
+        margin-bottom: 15px;;
+    }
+    .cart-page-block {
+        padding: 25px 0;
+    }
+    .breadcrumps{
+        margin-bottom: 20px;;
+    }
 }
 
 
@@ -854,10 +938,7 @@
         top: 15px;
         width: 13px;
     }
-    .counter-nav, .counter-number {
-        line-height: 30px;
-        font-size: 22px;;
-    }
+
     .counter-plus:before {
         right: 9px;
         top: 15px;
@@ -879,9 +960,9 @@
         bottom: auto;
         right: 3px;
         top: 0px;
-        max-width: 20px;;
+        max-width: 25px;;
         svg{
-            width: 20px;
+            width: 25px;
         }
     }
     .ware-prices{
