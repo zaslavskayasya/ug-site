@@ -1,9 +1,9 @@
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
 script(src='./js/plugins/slick/slick.js')
-script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
 script(src=jsPath + "main.js" defer)
 
 if IsMain 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
     script(src="./js/main-page.js" defer)
 
 if Iscatalog
@@ -18,3 +18,7 @@ if IsCart
 
 if IsOrder 
     script(src="./js/order.js" defer)
+
+if IsContent 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+    script(src="./js/content.js" defer)

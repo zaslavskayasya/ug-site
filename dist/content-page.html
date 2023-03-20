@@ -33,7 +33,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./js/plugins/slick/slick.js"></script>
     <script src="./js/main.js" defer></script>
-    <script src="./js/order.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/content.js" defer></script>
   </head>
   <body class="logged" id="body">
     <div class="sidenav" id="mySidenav"><a class="closebtn closeLeftSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
@@ -140,92 +141,106 @@
         </div>
       </div>
     </header>
-    <div class="cabinet-page">
-      <div class="content">
-        <div class="breadcrumps"> <a class="back-to-main" href="#"> <img src="./img/icons/arrow-left.svg" alt=""><span>Повернутись до головної</span></a></div>
-        <h3 class="catalog-name">Мої замовлення</h3>
-        <div class="table-all">
-          <div class="table-row names-of-all">
-            <div class="number t-item"> # </div>
-            <div class="date t-item">Дата</div>
-            <div class="sum t-item">Сума</div>
-            <div class="status t-item">Статус</div>
+    <div class="content-page">
+      <div class="content-page-header">
+        <div class="content">
+          <div class="breadcrumps-white breadcrumps"> <a class="back-to-main" href="#"> <img src="./img/icons/arrow-left-white.svg" alt=""><span>Повернутись до головної</span></a>
+            <ul class="bread">
+              <li class="bread-li"> <a class="bread-a" href="#">Каталог</a></li>
+            </ul>
           </div>
-          <!--/ one order    -->
-          <div class="table-plate one-order">
-            <div class="table-row table-header accordion">
-              <div class="number t-item"> <span class="only-mob-info">#</span><span>630 </span></div>
-              <div class="date t-item"> <span class="only-mob-info">Дата</span><span>03.08.09</span></div>
-              <div class="sum t-item"> <span class="only-mob-info">Сума </span><span>494.51₴</span></div>
-              <!-- .status-road , .status-rejected , .status-done, .status-complect-->
-              <div class="status t-item status-road">В дорозі</div>
-              <div class="panel-status"> </div>
+          <div class="oils-brand-name">Opet Lubricants</div>
+          <div class="oils-brand-describe"> Технічний супровід - невід’ємний інструмент справжніх спеціалістів у сфері змащувальних матеріалів </div>
+        </div>
+      </div>
+      <div class="main-content-container">
+        <div class="content">
+          <div class="block-of-first-description">
+            <div class="texts-part wow fadeIn" data-wow-delay="0.4s">
+              <h2> Opet надає безкоштовний сервіс професійної діагностики Fullcheck LAB</h2>
+              <p class="normal-text"> Послуга дозволяє визначати на постійній основі не лише стан вузлів різноманітної техніки, а й відслідковувати залишковий ресурс мастильних матеріалів та технічних рідин та отримувати додаткові переваги.</p>
             </div>
-            <div class="panel">
-              <div class="order-table">
-                <div class="order-table-header">
-                  <div class="table-column column-1 table-articul">Артикул</div>
-                  <div class="table-column column-2 photo">Фото</div>
-                  <div class="table-column column-3 name">Назва</div>
-                  <div class="table-column column-4 numbers">Кількість</div>
-                  <div class="table-column column-5 price">Ціна</div>
-                </div>
-                <div class="order-table-inner dashed">
-                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span class="art">23445</span></div>
-                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/1.png" alt=""></div>
-                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
-                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість</span><span>1</span></div>
-                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
-                </div>
-                <div class="order-table-inner">
-                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span class="art">23445</span></div>
-                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/2.png" alt=""></div>
-                  <div class="table-column column-3 name"> <a href="#">Масло</a></div>
-                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість </span><span>1 </span></div>
-                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
-                </div>
-              </div>
-              <button class="btn btn-green">Відмінити замовлення </button>
+            <div class="illustrations-block wow fadeIn" data-wow-delay="0.4s">
+              <div class="img-wr"> <img src="../img/illustrations/bigopet.jpg" alt="#"></div>
             </div>
           </div>
-          <!--/ one order    -->
-          <div class="table-plate one-order">
-            <div class="table-row table-header accordion">
-              <div class="number t-item"> <span class="only-mob-info">#</span><span>630 </span></div>
-              <div class="date t-item"> <span class="only-mob-info">Дата</span><span>03.08.09</span></div>
-              <div class="sum t-item"> <span class="only-mob-info">Сума </span><span>494.51₴</span></div>
-              <!-- .status-road , .status-rejected , .status-done, .status-complect-->
-              <div class="status t-item status-done">В дорозі</div>
-              <div class="panel-status"> </div>
+          <div class="image-place wow fadeInUp" data-wow-delay="0.4s"> <img src="../img/illustrations/motor.jpg" alt=""></div>
+          <h2 class="wow fadeInUp" data-wow-delay="0.4s">Ми запровадили низку постійно діючих програм, у яких фахівці відділу технічної підтримки ТОВ «СП ЮКОЙЛ» надають оперативну та професійну консультацію за такими напрямками:</h2>
+          <ul class="ways-ul wow fadeInUp" data-wow-delay="0.4s">
+            <li class="ways-li">Підбір продуктів YUKO відповідно до рекомендацій виробників техніки (транспортні засоби, промислове обладнання);</li>
+            <li class="ways-li">Підбір аналогів мастильних матеріалів YUKO до продукції інших виробників;</li>
+            <li class="ways-li">Надання документації на продукцію YUKO: технічні описи, паспорти якості, відгуки споживачів;</li>
+            <li class="ways-li">Організація навчальних заходів з мастильних матеріалів;</li>
+            <li class="ways-li">Проведення аудиту на підприємстві з метою оптимального та безпечного використання асортименту продукції клієнтів;</li>
+            <li class="ways-li">Організація та проведення випробувань мастильних матеріалів YUKO у транспортних засобах та промисловому обладнання.</li>
+          </ul>
+          <h2 class="center-it wow fadeInUp" data-wow-delay="0.4s"> OPET, виробничі потужності якого знаходяться в місті Ізмір, Туреччина, випускає майже всі види технічних рідин для техніки: </h2>
+          <div class="oil-types">
+            <div class="oil-card wow fadeIn" data-wow-delay="0.4s">
+              <p class="oil-header">Моторні оливи</p>
+              <p class="oil-text">Для легкових та вантажних автомобілів, що відрізняються зменшеною витратою пального, низькою токсичністю вихлопу та збільшеними сервісними інтервалами.</p>
+              <p class="oil-text">В асортименті є всесезонні та сезонні оливи.</p>
             </div>
-            <div class="panel">
-              <div class="order-table">
-                <div class="order-table-header">
-                  <div class="table-column column-1 table-articul">Артикул</div>
-                  <div class="table-column column-2 photo">Фото</div>
-                  <div class="table-column column-3 name">Назва</div>
-                  <div class="table-column column-4 numbers">Кількість</div>
-                  <div class="table-column column-5 price">Ціна</div>
-                </div>
-                <div class="order-table-inner dashed">
-                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>23445</span></div>
-                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/1.png" alt=""></div>
-                  <div class="table-column column-3 name"> <a href="#">ABRO Антигель - 47 946мл/568л</a></div>
-                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість</span><span>1</span></div>
-                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
-                </div>
-                <div class="order-table-inner">
-                  <div class="table-column column-1 table-articul"><span class="only-mob-info">Артикул</span><span>23445</span></div>
-                  <div class="table-column column-2 photo"><img src="./img/illustrations/often/2.png" alt=""></div>
-                  <div class="table-column column-3 name"> <a href="#">Масло</a></div>
-                  <div class="table-column column-4 numbers"> <span class="only-mob-info">Кількість </span><span>1 </span></div>
-                  <div class="table-column column-5 price"> <span class="only-mob-info">Ціна</span><span>56665 </span></div>
-                </div>
-                <button class="button button-black">Відмінити замовлення </button>
+            <div class="oil-card wow fadeIn" data-wow-delay="0.5s">
+              <p class="oil-header">Трансмісійні оливи</p>
+              <p class="oil-text">Для всіх видів коробок передач та допоміжних редукторів. </p>
+            </div>
+            <div class="oil-card wow fadeIn" data-wow-delay="1s">
+              <p class="oil-header">Універсальні тракторні оливи</p>
+              <p class="oil-text">Для застосування в двигунах, трансмісіях, «мокрих» гальмах та турбомуфтах тракторів та іншої сільськогосподарської та будівельної техніки.</p>
+            </div>
+            <div class="oil-card wow fadeIn" data-wow-delay="0.9s">
+              <p class="oil-header">Антифризи</p>
+              <p class="oil-text">З подовженим інтервалом заміни.</p>
+            </div>
+            <div class="oil-card wow fadeIn" data-wow-delay="1.5s">
+              <p class="oil-header">Гідравлічні оливи</p>
+            </div>
+            <div class="oil-card wow fadeIn" data-wow-delay="2s">
+              <p class="oil-header">Гальмівні рідини </p>
+            </div>
+          </div>
+          <div class="block-of-first-description second-description wow fadeIn" data-wow-delay="0.4s">
+            <div class="illustrations-block">
+              <div class="img-wr video-block">
+                <iframe src="https://www.youtube.com/embed/OXNkemEjgWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
               </div>
+            </div>
+            <div class="texts-part">
+              <h2> OPET – одна з найбільших нафтопереробних компаній Туреччини </h2>
+              <p class="normal-text"> Основними видами діяльності Opet є виробництво та реалізація пального, а також моторних масел та інших засобів для догляду за автомобілями, мотоциклами та іншими видами техніки.</p>
+              <p class="normal-text"> Компанія виробляє змащувальні матеріали вже понад 60 років, а новий завод OPET Lubricants був введений у промислову експлуатацію восени 2019 року і є одним із найсучасніших заводів у Європі. На цій фабриці випускається оригінальні оливи та технічні рідини FMY для Ford Truck, Opar Olio для Tofas, Agromega, Megatran та Agrofriz для сільськогосподарської техніки Case New Holland. </p>
+              <p class="normal-text"> Мастильні матеріали OPET мають міжнародні сертифікати відповідності ACEA та API, та експортуються до більш ніж 25 країн світу.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="back-img back-img-left"> <img src="./img/illustrations/nack-img.png" alt=""></div>
+      <div class="back-img back-img-bottom"> <img src="./img/illustrations/nack-img-b.png" alt=""></div>
+    </div>
+    <div class="cart-right"><a class="closebtn closeCart closeRightSidebar closeRightSidebar2" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
+      <div class="descr-name">Корзина</div>
+      <div class="cards"> <a class="card" href="# ">
+          <div class="wraps-tips"><span class="action">акція</span><span class="hit">хіт</span></div>
+          <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/often/3.png" alt="oli"></div>
+          <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+          <div class="bottom-info">
+            <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+          </div>
+        </a><a class="card" href="# ">
+          <div class="wraps-tips"><span class="hit">хіт</span></div>
+          <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/often/2.png" alt="oli"></div>
+          <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
+          <div class="bottom-info">
+            <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
+          </div>
+        </a></div>
+      <div class="submit-block">
+        <p class="sale"> Знижка <span>190 грн</span></p>
+        <p class="toPay"> Разом до оплати</p>
+        <p class="totalSum"> 3999 грн. </p>
+        <button class="btn btn-green form">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+        <button class="btn empty-btn one-click-buy">КУПИТИ В 1 КЛІК</button>
       </div>
     </div>
     <footer class="l-footer">
@@ -384,31 +399,6 @@
             <p class="btn btn-empty register-link triggerLogin">Я вже зареєстрований</p>
           </div>
         </form>
-      </div>
-    </div>
-    <div class="cart-right"><a class="closebtn closeCart closeRightSidebar closeRightSidebar2" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
-      <div class="descr-name">Корзина</div>
-      <div class="cards"> <a class="card" href="# ">
-          <div class="wraps-tips"><span class="action">акція</span><span class="hit">хіт</span></div>
-          <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/often/3.png" alt="oli"></div>
-          <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-          <div class="bottom-info">
-            <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-          </div>
-        </a><a class="card" href="# ">
-          <div class="wraps-tips"><span class="hit">хіт</span></div>
-          <div class="card-img-wrap"> <img class="card-img" src="./img/illustrations/often/2.png" alt="oli"></div>
-          <p class="card-name">Master Synt 4T 10W-30 API SL/CF 1л генераторне</p>
-          <div class="bottom-info">
-            <div class="prices"> <span class="new-price">156.00 ₴</span><span class="old-price">765.00 ₴</span></div>
-          </div>
-        </a></div>
-      <div class="submit-block">
-        <p class="sale"> Знижка <span>190 грн</span></p>
-        <p class="toPay"> Разом до оплати</p>
-        <p class="totalSum"> 3999 грн. </p>
-        <button class="btn btn-green form">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
-        <button class="btn empty-btn one-click-buy">КУПИТИ В 1 КЛІК</button>
       </div>
     </div>
   </body>

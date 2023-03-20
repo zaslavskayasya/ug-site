@@ -38,6 +38,17 @@
             background-color: #e7e2e2;
         }
     }
+    &.breadcrumps-white{
+        .back-to-main{
+            background-color: transparent;
+            border-bottom: none;
+            span{
+                color: #fff;
+
+            }
+        }
+
+    }
 }
 
 .bread{

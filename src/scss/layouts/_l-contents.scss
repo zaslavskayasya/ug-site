@@ -1,0 +1,277 @@
+.content-page{
+    position: relative;
+    padding: 00px 0px 80px;
+    .back-img{
+        z-index: 1;
+    }
+    
+    &-header{ 
+        padding-top: 60px;    
+        padding-bottom: 60px;
+        /* The image used */
+        background-image: url("../img/illustrations/background.jpg");
+        
+        /* Set a specific height */
+        min-height: 284px;
+        
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+    .breadcrumps-white{
+        margin: 0 auto 30px;
+        justify-content: center;
+        .bread{
+            .bread-li a{
+                color: #fff;
+            }
+        }
+    }
+    h2{
+        margin-bottom: 30px;;
+    }
+}
+
+.oils-brand-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;;    
+    color: #FFFFFF;
+    margin-bottom: 20px;;
+}
+
+.oils-brand-describe {
+    max-width: 540px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.9%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.main-content-container {
+    padding: 80px 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.block-of-first-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 78px;
+    &.second-description {
+
+        align-items: flex-start;
+    }
+    .texts-part{
+        max-width: 710px ;
+        h2{
+            margin-bottom: 30px;;
+        }
+    }
+    .illustrations-block {
+        .img-wr{
+            width: 413px;
+            img, iframe {
+                width: 100%;
+            }
+            &.video-block{
+                width: 555px;
+                margin-right: 25px;;
+
+                iframe{
+                    min-height: 350px;;
+                }
+
+            }
+        }
+    }
+}
+
+.texts-part{
+    .normal-text{
+        margin-bottom: 25px;;
+    }
+}
+
+.image-place{
+    width: 100%;
+    border-radius: 10px;;
+    overflow: hidden;
+    margin-bottom: 68px;
+    img{
+        width: 100%;
+    }
+}
+
+.ways  {
+    &-ul{
+        padding-left: 60px;
+        margin-bottom: 115px;
+    }
+    &-li{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.9%;
+        color: #0B0B0B;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:before{
+            content: "";
+            display: block;
+            height: 11px;
+            width: 11px;
+            border-radius: 100%;
+            background-color: #007CC3;
+            position: absolute;
+            left: -30px;
+            top:6px;
+
+        }
+    }
+}
+
+.center-it{
+    text-align: center;;
+    &.h2{
+
+        margin-bottom: 50px;;
+    }
+}
+
+.oil-types{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-bottom: 116px;;
+    .oil-card{
+        width: 383px;
+        background-color: #EDBE46;
+        border-radius: 10px;
+        padding: 30px 20px;
+        color: #fff;
+        margin-bottom: 25px;
+
+    }
+    .oil-header{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 152.9%;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 10px;;
+    }
+    .oil-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 152.9%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        &:first-of-type{
+        }
+
+        color: #FFFFFF;
+    }
+
+}
+
+@media screen and (max-width: 1500px){
+    .content-page-header {
+        background-size: initial;
+     
+    }
+   
+}
+
+@media screen and (max-width: 920px){
+    .block-of-first-description{
+        flex-direction: column;
+    }
+    .block-of-first-description .texts-part{
+        width: 100%;
+    }
+    .block-of-first-description .illustrations-block .img-wr {
+        width: auto;
+        max-width: 248px;
+    }
+    .main-content-container {
+        padding: 50px 0;
+    }
+    .ways-ul {
+        margin-bottom: 60px;
+        padding-left: 42px;
+    }
+    .oil-types .oil-card {
+        width: 336px;
+    }
+    .block-of-first-description .illustrations-block .img-wr.video-block {
+        margin-right: 0px;
+        width: 100%;
+        max-width: initial;
+        margin-bottom: 25px;;
+    }
+    .block-of-first-description .illustrations-block .img-wr.video-block{
+
+    }
+}
+
+@media screen and (max-width: 760px){
+    .content-page-header {
+        margin-top: -15px;;
+     
+    }
+    .breadcrumps.breadcrumps-white {
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .breadcrumps.breadcrumps-white .back-to-main{
+        margin-bottom: 0px;;
+    }
+   
+}
+
+
+@media screen and (max-width: 600px){
+    .content-page-header {
+        padding-top: 30px;
+    }
+    .oils-brand-name {
+        font-size: 37px;
+    }
+    .oils-brand-describe {
+        font-size: 16px;
+    }
+    .block-of-first-description .illustrations-block .img-wr {
+        max-width: 155px;
+    }
+    .image-place{
+        display: none;
+    }
+    .ways-li {
+        font-size: 16px;
+    }
+    .main-content-container {
+        padding: 19px 0;
+    }
+    .block-of-first-description{
+        margin-bottom: 10px;;
+    }
+}

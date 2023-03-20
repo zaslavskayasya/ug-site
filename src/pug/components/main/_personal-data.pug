@@ -7,8 +7,9 @@
         h3.catalog-name Особисті дані
         .wrap-form 
             form
-                .personal-data-form
+                .personal-data-form 
                     .left-part.field-wrap
+                        p.personal-form-part-name Ваші контактні дані
                         .order-input
                             label(for="lastName") Прізвище*
                             input(type="text" name="persnal-lastName" autocomplete="on" required placeholder="Ваше прізвище")
@@ -22,6 +23,7 @@
                             label(for="e-mail") Електронна пошта
                             input(type="email" name="order-e-mail" required placeholder="your@gmail.com")
                     .right-part
+                        p.personal-form-part-name Доставка
                         .field-wrap
                             .order-input
                                 label.select-label(for="persnal-sendType") Спосіб доставки

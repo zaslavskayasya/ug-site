@@ -1,0 +1,15 @@
+extends ./helpers/layout/_layout
+
+block value
+  - const path = ".";
+  - const IsContent = true;
+
+block header
+  include components/header/_header
+
+block main
+  include components/main/_content
+
+block footer
+  include components/main/_cart
+  include components/footer/_footer
