@@ -136,12 +136,18 @@
     justify-content: space-between;
     text-align: center;
     position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     .t-item{
         width: 20%;
         text-align: left;;
     }
   }  
 
+.cabinet-page .table-plate {
+    border-radius: 10px;;
+    background-color: #fff;
+}
   .panel-status {
     position: absolute;
     right: 15px;
@@ -217,6 +223,7 @@
     // background-color: #fff;
     padding-bottom: 10px;
     margin-bottom: 20px;;
+    border-radius: 10px;
   }
 
 //   .order-header{
@@ -377,6 +384,10 @@
 }
 
 @media screen and (max-width:780px){
+    .cabinet-page .catalog-name{
+        font-size: 30px;
+        margin-bottom: 15px;;
+    }
     .table-row.names-of-all{
         display: none;        
     }

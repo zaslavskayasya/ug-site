@@ -847,6 +847,32 @@ option{
 @media screen and (max-width: 420px){
   .wrap-catalog-block .card {
     max-width: 100%;;
-    width: 100%;
+    width: 46%;
+  }
+  .card .wraps-tips {
+    left: 8px;
+  }
+  .card .action, .card .hit, .card .season{
+    font-weight: 500;
+  }
+  .wrap-catalog-block .card:not(:nth-child(4)), .wrap-catalog-block .card:nth-child(4){
+    margin-right: 0px;;
+  }
+  .wrap-catalog-block .card {
+    margin: 0 4px 4px;
+    max-width: 174px;
+    min-width: auto;
+    padding: 30px 10px;
+  }
 }
+
+@media screen and (max-width: 390px){
+  .catalog-page .prices {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card .wraps-tips {
+    left: 4px;
+  }
 }
