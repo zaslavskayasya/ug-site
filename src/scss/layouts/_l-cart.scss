@@ -960,14 +960,16 @@
     }
 
     .counter-plus:before {
-        right: 9px;
+        right: 10px;
         top: 15px;
         width: 13px;
+        height: 1px;
     }
     .counter-plus:after {
         height: 13px;
         left: 10px;
         top: 9px;
+        width: 1px;;
     }
     .ware-name {
         font-size: 12px;;
