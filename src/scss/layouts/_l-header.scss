@@ -143,7 +143,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 23;
+  z-index: 999999;
   top: 0;
   opacity: 0;
   left: -100%;
@@ -814,7 +814,7 @@ form.search-bar:valid a {
 
 @media screen and (max-width: 780px) {
   .sidenav {
-    width: 100%;
+    // width: 100%;
     z-index: 9999999;
   }
 
@@ -892,7 +892,10 @@ form.search-bar:valid a {
   .wrp-brand.kramer svg {
     height: 34px;
   }
-
+  .menu-line {
+    // height: 70px;
+    padding: 20px 15px 138px;
+    }
 }
 
 

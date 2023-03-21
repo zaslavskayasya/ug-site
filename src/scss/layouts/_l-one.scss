@@ -1,5 +1,27 @@
 .one-item-block{
-    padding: 80px 0px;
+    padding: 51px 0px 80px;
+    .container-for-image .action, 
+    .container-for-image .hit, 
+    .container-for-image .season {      
+        border-radius: 6px;
+        font-size: 17px;
+        font-weight: 600;
+        height: 16px;
+        line-height: 16px;
+        margin-right: 5px;
+        padding: 3px 6px;
+        text-align: center;
+        width: 45px;
+    }
+    .container-for-image .wraps-tips {
+        left: 23px;
+        top: 21px;
+    }
+    .h4 {     
+        line-height: 152.4%;
+        margin-bottom: 8px;
+        margin-top: -5px;
+    }
 }
 
 .one-item-wrap{
@@ -95,7 +117,7 @@
     min-width: 553px;
     background-color: #fff;
     padding: 20px;
-    height: 632px;
+    height: 597px;
     display: flex;
     align-items: center;
     position: relative;
@@ -246,7 +268,7 @@
     letter-spacing: 1.5px;
     color: #0B0B0B;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
     position: relative;
     cursor: pointer;
     &:after {
@@ -339,5 +361,33 @@
   @media screen and (max-width: 450px){
     .right-part .btn-green{
         width: 100%;
+    }
+    .one-item-wrap{
+        margin-bottom: 50px;
+    }
+    .one-item-block{
+        
+        .h3 {
+            margin-bottom: 22px;
+        }
+    }
+    .one-item-image {
+        margin: 0 auto 2px;
+        max-width: 60%;
+    }
+    .one-item-block .h4 {
+        margin-bottom: 30px;
+    }
+    .description-block {
+        margin-bottom: 26px;
+        .btn.btn-green {
+            font-size: 16px;
+        }
+        .right-part .btn-green {
+            margin: 0 auto 25px;
+        }
+    }
+    .description-text{
+        margin-bottom: 23px;;
     }
   }

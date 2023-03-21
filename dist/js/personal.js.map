@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["personal.js"],"sourcesContent":["console.log(\"personal\");;\r\n\r\nlet selects = document.querySelectorAll('.sel-trigger');\r\n\r\nconsole.log(selects);\r\n\r\nselects.forEach(function(sel, i){\r\n    sel.addEventListener(\"change\", ()=>{\r\n        sel.classList.add('check')\r\n    })\r\n\r\n})"],"file":"personal.js"}

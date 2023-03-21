@@ -33,6 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./js/plugins/slick/slick.js"></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/personal.js" defer></script>
   </head>
   <body class="logged" id="body">
     <div class="sidenav" id="mySidenav"><a class="closebtn closeLeftSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
@@ -170,7 +171,7 @@
                 <div class="field-wrap">
                   <div class="order-input">
                     <label class="select-label" for="persnal-sendType">Спосіб доставки</label>
-                    <select id="sendType" name="persnal-sendType">
+                    <select class="sel-trigger" id="sendType" name="persnal-sendType">
                       <option value="NoSendType" selected disabled>Оберіть спосіб доставки</option>
                       <option value="novaPoshta">Нова пошта</option>
                       <option value="ukrPoshta">Укрпошта </option>
@@ -179,7 +180,7 @@
                   </div>
                   <div class="order-input">
                     <label class="select-label" for="persnal-region">Область</label>
-                    <select id="region" name="persnal-region">
+                    <select class="sel-trigger" id="region" name="persnal-region">
                       <option value="noRegion" selected disabled>Оберіть регіон</option>
                       <option value="Odeka">Одеська</option>
                       <option value="Kyivska">Київська</option>
@@ -188,7 +189,7 @@
                   </div>
                   <div class="order-input">
                     <label class="select-label" for="city">Місто</label>
-                    <select id="city" name="persnal-city">
+                    <select class="sel-trigger" id="city" name="persnal-city">
                       <option value="noCity" selected disabled>Оберіть місто</option>
                       <option value="Odesa">Одеса</option>
                       <option value="Kyiv">Київ</option>
@@ -197,7 +198,7 @@
                   </div>
                   <div class="order-input">
                     <label class="select-label" for="postOffice">Відділення</label>
-                    <select id="postOffice" name="persnal-citpostOfficey">
+                    <select class="sel-trigger" id="postOffice" name="persnal-citpostOfficey">
                       <option value="noPostOffice" selected disabled>Оберіть відділення</option>
                       <option value="">№1 Небесної сотні 9а</option>
                       <option value="Kyiv">№2 проспект перемоги</option>

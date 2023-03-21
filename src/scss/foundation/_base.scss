@@ -79,7 +79,7 @@ body.active-right{
   opacity: 0;
   pointer-events: none;
   transition: all ease-in-out 0.1s;
-  z-index: 20;
+  z-index: 99999;
 }
 .slick-prev:before {
   content: '';
@@ -483,7 +483,7 @@ body.active-right{
 
 @media screen and(max-width: 400px){
   .content {
-    max-width: 360px;
+    max-width: 100%;
     padding: 0 15px;
   }
   .sale-hits .block-name {

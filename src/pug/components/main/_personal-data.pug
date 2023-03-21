@@ -27,28 +27,28 @@
                         .field-wrap
                             .order-input
                                 label.select-label(for="persnal-sendType") Спосіб доставки
-                                select#sendType(name="persnal-sendType")
+                                select#sendType(name="persnal-sendType" ).sel-trigger
                                     option(value="NoSendType" selected disabled) Оберіть спосіб доставки
                                     option(value="novaPoshta" ) Нова пошта
                                     option(value="ukrPoshta") Укрпошта 
                                     option(value="ukrPoshta") Укрпошта 
                             .order-input
                                 label.select-label(for="persnal-region") Область
-                                select#region(name="persnal-region") 
+                                select#region(name="persnal-region").sel-trigger 
                                     option(value="noRegion" selected disabled) Оберіть регіон
                                     option(value="Odeka") Одеська
                                     option(value="Kyivska") Київська
                                     option(value="Vinnicka") Вінницька
                             .order-input
                                 label.select-label(for="city") Місто
-                                select#city(name="persnal-city") 
+                                select#city(name="persnal-city").sel-trigger 
                                     option(value="noCity" selected disabled) Оберіть місто
                                     option(value="Odesa") Одеса
                                     option(value="Kyiv") Київ
                                     option(value="Vinnica") Вінниця 
                             .order-input
                                 label.select-label(for="postOffice") Відділення
-                                select#postOffice(name="persnal-citpostOfficey") 
+                                select#postOffice(name="persnal-citpostOfficey").sel-trigger 
                                     option(value="noPostOffice" selected disabled) Оберіть відділення
                                     option(value="") №1 Небесної сотні 9а
                                     option(value="Kyiv") №2 проспект перемоги

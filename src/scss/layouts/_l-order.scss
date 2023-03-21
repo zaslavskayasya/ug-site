@@ -126,6 +126,7 @@
     display: none;
     overflow: hidden;
     padding-bottom: 35px;;
+    border-radius: 10px;;
      .button {
         margin-top: 24px;
     }
@@ -138,6 +139,9 @@
     position: relative;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-radius: 10px;;
+    font-size: 19px;
+    font-weight: 500;;
     .t-item{
         width: 20%;
         text-align: left;;
@@ -208,10 +212,10 @@
     }
     .order-input label {
 
-        color: #A9A9A9;
+        color: #1e1e1e;
     }
     .order-input input::placeholder{
-        color: #000;
+        color: #ccc;
     }
     .order-input input , .order-input select{
         height: 51px;
@@ -221,7 +225,7 @@
 
   .table-plate{
     // background-color: #fff;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
     margin-bottom: 20px;;
     border-radius: 10px;
   }
@@ -241,15 +245,29 @@
     }
 }
 
-  .personal-data-form input, .personal-data-form select {
+  .personal-data-form input, 
+  .personal-data-form select {
     border: 1px solid #000;
     line-height: 41px;
 }
 
+.personal-data-form select{
+    color: #ccc;
+    option{
+        color: #000;
+    }
+}
+.personal-data-form select::selection{
+    color: red;
+}
+
+select.check{
+    color: #000;
+}
+
 .wrap-form {
     background-color: #fff;
-    padding: 50px;
-    padding-bottom: 100px;
+    padding: 34px 33px 98px;
     border-radius: 10px;;
 }
 
@@ -259,7 +277,7 @@
     justify-content: space-between;
     margin-bottom: 20px;;
     .select-label:after{
-        top:39px;
+        top:45px;
     }
     .left-part, .right-part{
             width: 48%;
@@ -297,7 +315,7 @@
     width: 94px;;
 }
 .order-table .column-2.photo {
-    max-width: 73px;
+    max-width: 50px;
 }
 .table-column.column-2 {
     width: 83px;
@@ -309,11 +327,21 @@
 .table-column.column-4{
     width: 100px;;
 }
+.table-column.column-5{
+    width: 100px;;
+}
+.table-column.column-1.table-articul {
+    width: 34px;
+    font-size: 14px;
+}
 
 .order-table-inner{
-    padding: 20px 20px;
+
     position: relative;    
     align-items: center;
+    .table-column.column-3 {
+        font-size: 14px;
+    }
     // &:not(:last-child){
         //     border-bottom: 1px solid #ccc;
         // }
@@ -322,9 +350,9 @@
             display: block;
             bottom: -2px;
             height: 1px;
-            left: 35px;
+            left: 27px;
             position: absolute;
-            width: 94%;
+            width: 95%;
             border-bottom: 1px solid #DDDDDD;
         // background-image: url(../img/icons/dashed.svg);
     }
@@ -339,9 +367,14 @@
 }
 
 .cabinet-page{
-    padding: 80px 0px;
+    padding: 50px 0px 80px;
     .catalog-name{
-        margin-bottom: 30px;;
+        margin-bottom: 30px;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+        text-transform: none;
     }
     .btn-green{
         float: right;
@@ -359,8 +392,20 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    margin-bottom: 20px;
+    margin-bottom: 37px;
     color: #0B0B0B;
+}
+
+@media screen and (max-width: 1040px){
+    .table-column.column-3 {
+        text-align: left;
+        width: 342px;
+    }
+    .table-column.column-3 {
+        text-align: left;
+        width: 268px;
+        font-size: 16px;
+    }
 }
 
 
@@ -371,6 +416,9 @@
             width: 100%;
         }
     }  
+    .personal-data-form .left-part{
+        margin-bottom: 30px;
+    }
     .cabinet-page .h2 {
         margin-bottom: 25px;
     }
@@ -384,10 +432,6 @@
 }
 
 @media screen and (max-width:780px){
-    .cabinet-page .catalog-name{
-        font-size: 30px;
-        margin-bottom: 15px;;
-    }
     .table-row.names-of-all{
         display: none;        
     }
@@ -460,7 +504,8 @@
             width: 86px;
         }
         .table-column.column-3 {
-            width: 73%;
+            width: 82%;
+            padding-top: 0;
         }
         .order-table-inner {
             padding: 12px;
@@ -468,12 +513,13 @@
         padding-bottom: 20px;;
         .table-header.accordion {
             position: relative;
+            padding: 18px 17px 0px;
             &:after{
                 content: "";
                 display: block;
-                height: 1px;
+                height: 2px;
                 width: 100%;
-                background-color: #fafafa;
+                background-color: #858585;
                 position: absolute;
                 width: 89%;
                 left: 14px;
@@ -517,10 +563,61 @@
         width: auto;
         font-size: 16px;
     }
-    .cabinet-page .btn.btn-green {
-        padding: 14px 17px;
-    }
 
+    .cabinet-page{
+        padding: 3px 0;
+        .number.t-item ,
+        .status.t-item  {
+            margin-bottom: 36px;
+        }
+        .catalog-name {
+            font-size: 30px;
+            margin-bottom: 32px;
+        }
+        .accordion{
+            padding: 18px 17px 0px;
+        }
+        .table-plate .number.t-item{
+            font-size: 20px;
+        }
+        .table-row .t-item{
+            width: 40%;
+        }
+        .date .t-item{
+            padding-top: 22px;
+        }
+        .sum .t-item{
+            padding-top: 22px;
+        }
+        .order-table {
+            margin: 0px 20px;
+        }
+       .table-column .only-mob-info {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+        .order-table-inner {
+            align-items: flex-start;
+        }
+        
+    }
+    .cabinet-page .table-column.photo {
+        padding-top: 0;
+    }
+    .cabinet-page .order-table .column-1, 
+    .cabinet-page .order-table .column-4, 
+    .cabinet-page .order-table .column-5 {
+
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .cabinet-page .order-table .column-4.numbers,
+    .cabinet-page .order-table .column-5.price,
+    .cabinet-page .order-table .column-1.table-articul {
+        padding: 0px 2px 0;
+        text-align: left;
+    }
 }
 
 

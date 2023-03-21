@@ -93,7 +93,7 @@ function openDes(evt, cityName) {
           {
             breakpoint: 365,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
               rows: 2,
               infinite: true,

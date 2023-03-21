@@ -86,9 +86,9 @@ overflowDarken.addEventListener('click', ()=>{
             // bodyTag.style.paddingRight = "70px"
           } else {
             if (!current.classList.contains('open'))
+            // RightSideMenu.style.overflow  = "hidden";
                 current.classList.add('open');
             elemForHideSkroll.style.overflow = "hidden";
-            RightSideMenu.style.overflow  = "hidden";
           }
       });
   });
@@ -100,8 +100,19 @@ $('.brand-slider').slick({
     slidesToShow: 8,
     slidesToScroll:4,
     margin: 10,
-    arrows: false,
-  });
+    arrows: false,    
+  },
+  {
+    breakpoint: 520,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: false,
+
+    }
+  },
+  );
 
 
   var stepsSlider = document.getElementById('steps-slider');
