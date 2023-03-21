@@ -309,12 +309,12 @@ option{
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     /* identical to box height */
     display: flex;
     align-items: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     /* 2 */
     color: #0B0B0B;
 }
@@ -606,19 +606,6 @@ option{
     margin-bottom: 35px;    
 }
 
-.block-name{
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    /* 2 */
-    color: #0B0B0B;
-}
 .common-checks{
     margin-bottom: 35px;
 }
@@ -685,13 +672,13 @@ option{
 .block-name{
     margin-bottom: 30px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight:600;
+    font-size: 20px;
     line-height: 17px;
     /* identical to box height */
     display: flex;
     align-items: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     /* 2 */
     color: #0B0B0B;
 }

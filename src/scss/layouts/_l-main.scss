@@ -6,12 +6,12 @@
     // height: 100vh;
     position: relative;
     .h-24{
-        max-width: 700px;
-        margin-bottom: 50px;
+        max-width: 530px;
+        margin-bottom: 44px;
     }
     .h1{
         max-width: 302px;
-        margin-bottom: 71px;;
+        margin-bottom: 79px;;
     }
 
     
@@ -41,6 +41,7 @@
     left: auto;
     right: 318px;
     top: 291px;
+    // bottom: 0px;
     z-index: 5;
   }
   #machanism{
@@ -60,13 +61,13 @@
 
 
   .pluses-ul{
-    padding-top: 100px;;
+    padding-top: 111px;;
     z-index: 20;
     position: relative;
     display: flex;
     padding-left: 0px;
     justify-content: space-between;
-    margin-bottom: 68px;;
+    margin-bottom: 72px;
   }
 
 
@@ -95,6 +96,7 @@
     }
     .pluses-img{
         margin-right: 15px;;
+        width: 70px;;
     }
 
   }
@@ -173,7 +175,7 @@
     padding-top: 50px;
     padding-bottom: 57px;;
     .block-name{
-        margin-bottom: 28px;
+        margin-bottom: 34px;
     }
   }
 
@@ -182,7 +184,7 @@
   }
 
   .choose {
-    margin: 50px 0px 80px;;
+    margin: 75px 0 89px;
     padding: 73px 65px;
     background-image: url('../img/illustrations/ad-bg.jpg');
     background-size: cover;
@@ -206,13 +208,19 @@
 .prom-wrap{
     display: flex; 
     justify-content: space-between;
+
 }
 
 .left-prom{
-    display: flex;;
+    display: flex;
+    margin-top: 13px;
 }
 .info-prom{
-  padding-bottom: 80px;;
+  padding-bottom: 56px;;
+}
+.right-prom{
+  margin-right: 63px;
+  margin-top: 36px;
 }
 .prom-img-wrap{
   transition: all ease-in 0.3s;
@@ -320,6 +328,29 @@
   }
 }
 
+@media screen and (max-width: 1400px){
+  .pluses-ul{
+    padding-top:0px;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .often-find {
+    margin-bottom: 25px;
+  }
+  .pluses-ul{
+    // flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .pluses-li{
+    margin-bottom: 50px;;
+    // width: 370px;
+    padding: 37px 35px;
+  }
+}
+
 @media screen and (max-width: 1200px ){
   #car{   
     right: 8px;
@@ -335,14 +366,25 @@
     width: 1088px;
     max-width: 1088px;;
   }
+  .prom-item {
+    border-radius: 10px;
+    display: block;
+    height: 284px;
+    margin-bottom: 25px;
+    padding: 28px 16px;
+    width: 238px;
+  } 
+  .mens-promo-wrap {
+    max-width: 220px;
+  }
+ 
 }
 
 
 @media screen and (max-width: 1100px ){
-  #car{   
-    right: -98px;
-
-  }
+  #car {
+    right: -171px;
+}
   .often-find-wrap {
     width: 1200px;
     // overflow-y: scroll;
@@ -355,9 +397,9 @@
   .slick-slide {
     margin: 12px 15px;
   }
-  .mens-promo-wrap {
-    max-width: 265px;
-  }
+  // .mens-promo-wrap {
+  //   max-width: 265px;
+  // }
   .container-big {
     max-width: 100%;
     padding: 0px 25px;
@@ -369,6 +411,9 @@
 @media screen and (max-width: 990px ){
   #car{   
     right: -178px;
+  }
+  .wrap-main-screen { 
+    padding: 57px 0 100px;
   }
 
 }
@@ -491,6 +536,12 @@
     text-align: center;
     font-size: 30px;
   }
+  .l-header.main-header{
+    background-color: transparent;
+  }
+  .l-header.main-header .cart-amount {
+    border: 3px solid #eee;
+}
 }
 
 @media screen and (max-width: 650px){
@@ -506,11 +557,105 @@
     }
 
   }
+  #mobile-car {
+    top: 90px;
+    width: 388px;
+}
+}
+
+@media screen and (max-width: 500px){
+  .wrap-main-screen {
+    padding: 2px 0 184px;
+  }
+  #mobile-car {
+    top: 127px;
+    width: 436px;
+  }
+  .right-prom {
+    margin-right: 0px;
+}
 }
 
 
 @media screen and (max-width: 390px){
   #mobile-car {
-    top: 198px;
-}
+    top: 192px;
+    width: 403px;
+  }
+  .wrap-main-screen {
+    padding: 35px 0 184px;
+  }
+  .h-24 {
+    font-size: 21px;
+    line-height: 147.4%;
+  }
+  .l-main .h-24 {
+    margin-bottom: 48px;
+    max-width: 300px;
+  }
+  .l-main .h1 {
+    margin-bottom: 14px;
+  }
+  .btn.btn-yellow {
+    font-size: 16px;
+  }
+  .wrap-main-screen {
+    padding: 35px 0 260px;
+  }
+  .pluses-li .pluses-img {
+    width: 55px;
+  }
+  .pluses-li{
+    font-size: 16px;
+    margin-bottom: 11px;
+    padding: 21px 18px;
+  }
+  .pluses-ul{
+    margin-bottom: 37px;
+  }
+  .often-find-img-wrap {
+    height: 88px;
+    margin: 0 auto 13px;
+    max-width: 61px;
+  }
+  .often-find {
+    margin-bottom: 0px;
+  }
+  .sale-hits {
+    padding-bottom: 4px;
+    padding-top: 29px;
+  }
+  .sale-hits .block-name {
+    margin-bottom: 21px;
+  }
+  .choose{
+    margin: 20px auto 42px;
+  }
+  .choose-name{
+    margin-bottom: 31px;
+  }
+  .saason-goods {
+    margin-bottom: 35px;
+  }
+  .prom-item {
+    width: 100%;
+    height: 271px;
+    margin-bottom: 16px;
+    padding: 52px 16px;
+  }
+  .info-prom{
+    .block-name{
+      margin-bottom: 31px;
+
+    }
+  }
+  .left-prom{
+    margin-top: 0px;;
+  }
+  .right-prom{
+    margin-top: 0px;;
+  }
+  .mens-promo-wrap {
+    max-width: 100%;
+  }
 }

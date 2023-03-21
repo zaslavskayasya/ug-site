@@ -14,21 +14,54 @@ let carImg= document.querySelector('#car');
 let backMechanic= document.querySelector('#machanism');
 let backYellow = document.querySelector('#back');
 
-document.addEventListener('mousemove', function(e){
-  // let ivalueX= (e.pageX * -1 / 45);
-  let ivalueY= (e.pageY * -1 / 40);
-  // let cvalueX= (e.pageX * -1 / 70);
-  let cvalueY= (e.pageY * -1 / 90);
+$.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+  console.log('tedt')
+  
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+  
+  window.onscroll = function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }
+}
 
-  // let bvalueX= (e.pageX * -1 / 40);
-  let bvalueY= (e.pageY * -1 / 35);
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  var pos = scrollTop / this.speed;
+  this.el.css('transform', 'translateY(' + -pos + 'px)');
+};
+
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});
+
+
+// window.addEventListener('scroll', function(e){
+//   console.log('onnnn')
+//   // // let ivalueX= (e.pageX * -1 / 45);
+//   // let ivalueY= (e.pageY * -1 / 40) + 10;
+//   // // let cvalueX= (e.pageX * -1 / 70);
+//   // let cvalueY= (e.pageY * -1 / 90);
+
+//   // // let bvalueX= (e.pageX * -1 / 40);
+//   // let bvalueY= (e.pageY * -1 / 35);
 
 
   
-  carImg.style.transform = 'translateY('+ivalueY+'px)' ;
-  backMechanic.style.transform = 'translateY('+cvalueY+'px)';
-  backYellow.style.transform = 'translateY('+bvalueY+'px)';
-})
+//   carImg.style.transform = 'translateY('+ -100+ 'px)' ;
+//   // backMechanic.style.transform = 'translateY('+cvalueY+'px)';
+//   // backYellow.style.transform = 'translateY('+bvalueY+'px)';
+// })
 
 
 
@@ -108,9 +141,10 @@ $('.season-slider').slick({
           breakpoint: 520,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
             dots: false,
+            rows: 2,
           }
         },
         {
@@ -119,6 +153,7 @@ $('.season-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
+            rows: 2,
             dots: false,
           }
         },
@@ -135,7 +170,7 @@ let oftenSlider = document.querySelector('.often-find-wrap');
 $('.often-find-wrap').slick({
   dots: false,
   infinite: true,
-  slidesToShow: 9,
+  slidesToShow: 8,
   slidesToScroll: 2,
   margin: 10,
   arrows: false,

@@ -19,7 +19,7 @@
 .footer-top{
     display: flex ;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 52px;
     &-link{
         display: flex;
         align-items: center;
@@ -78,4 +78,35 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 400px){
+    .footer-bottom{
+        flex-direction: row;
+        flex-flow: wrap;
+        position: relative;
+        .socials{
+            order: 1;
+            width: 40px;
+            flex-direction: column;
+            float: left;;
+            position: absolute;
+            left: 0px;
+            ;
+        }
+        .copy-mart{
+            order: 2;
+            width: 280px;
+            text-align: left;
+            padding-left: 60px;;
+        }
+        .copy{
+            order: 3;
+            width: 280px;
+            text-align: left;
+            padding-left: 60px;;
+        }
+    }
+    
 }

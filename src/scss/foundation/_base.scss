@@ -9,12 +9,18 @@ body {
   font-weight: 500;
   font-size: h.rem(16);
   color: h.$primary-color;
-  overflow-x: hidden;
+  // overflow-x: hidden;
    background-color: #eee;;
+   position: relative;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .wrapper{
-  overflow-x: hidden;
+  // overflow-x: hidden;
+  // position: relative;
 }
 
 body.active-left{
@@ -51,7 +57,7 @@ body.active-right{
 }
 
 .container-big{
-  width: 1485px; 
+  max-width: 1490px; 
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -152,6 +158,8 @@ body.active-right{
     color: #FFFFFF;
     margin-right: 5px;
     padding: 2px 7px;
+    z-index: 9;
+    position: relative;
   }
   .hit {
     background: #9747FF;
@@ -163,7 +171,7 @@ body.active-right{
   }
   .card-img-wrap{
       max-width: 215px;
-      margin: 24px auto 25px;;
+      margin: 5px auto 25px;;
       transition: all ease 0.3s;;
   }
   .card-name{
@@ -322,6 +330,13 @@ body.active-right{
   margin-right: 15px;;
 }
 
+
+
+@media screen and (max-width: 1400px){
+  .container-big {
+    max-width: 1222px;
+  }
+}
 @media screen and (max-width: 1300px){
   .content{
     padding: 0px 35px;
@@ -448,9 +463,63 @@ body.active-right{
   }
 }
 
+.only-mob{
+  display: none;
+}
 
 @media screen and (max-width:780px){
   .hide-mob{
     display: none;
+  }
+  .only-mob{
+    display: block;
+  }
+  .sale-hits{
+    .btn{
+      margin: 23px auto;
+    }
+  }
+}
+
+@media screen and(max-width: 400px){
+  .content {
+    max-width: 360px;
+    padding: 0 15px;
+  }
+  .sale-hits .block-name {
+    margin-bottom: 21px;
+  } 
+  .card .action, .card .hit, .card .season{
+    font-size: 10px;;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    display: block;
+    max-width: 281px;
+    padding: 4px 10px;
+  }
+  .card .card-img-wrap {
+    margin: 9px auto 12px;
+  }
+  .card .card-name {
+
+    margin-bottom: 7px;
+  }
+  .sale-hits{
+    .btn{
+      margin: 13px auto;
+    }
+  }
+  .saason-goods{
+    .btn{
+      margin: 13px auto;
+    }
+  }
+  .side-custom-arrows .slick-next{
+    top: -32px;
+  }
+  .side-custom-arrows .slick-prev {
+    top: -41px
   }
 }

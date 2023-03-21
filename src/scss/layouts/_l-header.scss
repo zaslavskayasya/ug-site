@@ -33,7 +33,7 @@
   // grid-template-columns: repeat(3, 1fr);
   text-align: center;
   align-items: center;
-  padding: 0 45px 0px 50px;
+  padding: 0 43px 0 50px;
   position: relative;
   // background: #fff;
 
@@ -87,26 +87,35 @@
 
 .brands-line-name {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 32px;
   display: flex;
   align-items: center;
   color: #0B0B0B;
-  margin-right: 34px;
+  margin-right: 27px;
+  // letter-spacing: 0.2px;
 
 }
 
 .top-margin{
   margin-top: -10px;;
+
 }
 
 .wrp-brand {
   height: 73px;
-  margin-right: 42px;
+  margin-right: 19px;
   transition: 0.3s ease all;
   padding: 10px 15px;
   border-radius: 10px;
+  &.kramer {
+    svg {
+      max-width: 212px;
+      height: 61px;;
+    }
+
+  }
 
   img {
     width: 100%;
@@ -323,9 +332,9 @@ form.search-bar {
   border-radius: 25px;
   // border: 4px solid rgb(5, 5, 5);
   padding: 5px;
-  margin-right: 30px;
+  margin-right: 17px;
   position: absolute;
-  right: 131px;
+  right: 140px;
   transition: all ease 0.3s;
 
 }
@@ -401,7 +410,7 @@ form.search-bar a {
   color: #027cc2;
   display: none;
   font-size: 13px;
-  left: -90px;
+  left: -86px;
   position: absolute;
   right: auto;
   text-align: center;
@@ -647,6 +656,10 @@ form.search-bar:valid a {
   transform-origin: center;
 }
 
+@media screen and (max-width: 1680px){
+  .footer-top{}
+}
+
 @media screen and (max-width: 1650px) {
   .inform-banner {
     height: auto;
@@ -743,23 +756,15 @@ form.search-bar:valid a {
     margin-right: 4px;
 
   }
-  .pluses-li {
-    padding: 27px 25px;
-    width: 346px;
-}
+//   .pluses-li {
+//     padding: 27px 25px;
+//     width: 346px;
+// }
 
 }
 
 @media screen and (max-width: 1090px){
-  .pluses-ul{
-    flex-direction: column;
-    align-items: center;
-  }
-  .pluses-li{
-    margin-bottom: 50px;;
-    width: 450px;
-    padding: 37px 35px;
-  }
+
   .brands-line-name {
     width: 228px;
   }
@@ -883,7 +888,10 @@ form.search-bar:valid a {
 
   .top-margin {
     margin-top: -5px;
-}
+  }
+  .wrp-brand.kramer svg {
+    height: 34px;
+  }
 
 }
 
