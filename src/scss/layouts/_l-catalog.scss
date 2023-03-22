@@ -326,7 +326,14 @@ option{
     color: #0B0B0B;
 }
 
-
+.login-part{
+  .order-input label{
+    font-size: 15px;;
+  }
+  .order-input input {
+    border-radius: 6px;;
+  }
+}
 
 .info-right, .cart-right, .login-part{
     transition: all ease 0.3s;
@@ -420,8 +427,12 @@ option{
     }
   }
   
+
+
+
   .cart-right{
     transition: all ease 0.3s;
+    
     .card{
       margin: 0px auto 48px;
     }

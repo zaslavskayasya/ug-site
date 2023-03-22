@@ -184,4 +184,16 @@ $('.last-seen').slick({
           },
     ],
 });
+
+
+let selects = document.querySelectorAll('.sel-trigger');
+
+console.log(selects);
+
+selects.forEach(function(sel, i){
+    sel.addEventListener("change", ()=>{
+        sel.classList.add('check');
+    })
+
+})
 //# sourceMappingURL=cart.js.map

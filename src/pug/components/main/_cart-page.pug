@@ -18,6 +18,35 @@
                             .table-column.column-4.numbers Кількість
                             .table-column.column-6.sum Сума
                             .table-column.column-7.del 
+                        .mobile-table-inner.border-b
+                            .img-wrap 
+                                img(src="./img/illustrations/often/1.png", alt="")
+                            .information 
+                                a(href="#") ABRO Антигель - 47 946мл/568л
+                                .counter-wrap 
+                                    .counter-nav.counter-minus 
+                                    .counter-number 1
+                                    .counter-nav.counter-plus
+                                .price 
+                                    span.originPrice 400
+                                    span ₴
+                            .table-column.column-7.del
+                                .delete-img
+                        .mobile-table-inner.border-b
+                            .img-wrap 
+                                img(src="./img/illustrations/often/2.png", alt="")
+                            .information 
+                                a(href="#") Oil red
+                                .counter-wrap 
+                                    .counter-nav.counter-minus 
+                                    .counter-number 1
+                                    .counter-nav.counter-plus
+                                .price 
+                                    span.originPrice 400
+                                    span ₴
+                                .delete-img
+
+
 
                         .order-table-inner.dashed.ware-item
                             .table-column.column-1.table-articul
@@ -102,40 +131,40 @@
                                 .field-wrap
                                     .order-input
                                         label(for="lastName") Прізвище*
-                                        input(type="text" name="lastName")
+                                        input(type="text" name="lastName" placeholder="Ваше прізвище")
                                     .order-input
                                         label(for="firstName") Ім'я*
-                                        input(type="text" name="firstName")
+                                        input(type="text" name="firstName" placeholder="Ваше ім'я")
                                     .order-input
                                         label(for="phoneNumber") Мобільний телефон*
-                                        input(type="tel" name="phoneNumber")
+                                        input(type="tel" name="phoneNumber" placeholder="Ваш телефон")
                                     .order-input
                                         label(for="e-mail") Електронна пошта
-                                        input(type="e" name="e-mail")
+                                        input(type="e" name="e-mail" placeholder="Ваша пошта")
                             .order-part
                                 p.order-header Доставка
                                 .field-wrap
                                     .order-input
                                         label.select-label(for="sendType") Спосіб доставки
-                                        select#sendType(name="sendType")
+                                        select#sendType(name="sendType").sel-trigger
                                             option(value="novaPoshta") Нова пошта
                                             option(value="ukrPoshta") Укрпошта 
                                             option(value="ukrPoshta") Укрпошта 
                                     .order-input
                                         label.select-label(for="region") Область
-                                        select#region(name="region") 
+                                        select#region(name="region").sel-trigger 
                                             option(value="Odeka") Одеська
                                             option(value="Kyivska") Київська
                                             option(value="Vinnicka") Вінницька
                                     .order-input
                                         label.select-label(for="city") Місто
-                                        select#city(name="city") 
+                                        select#city(name="city").sel-trigger 
                                             option(value="Odesa") Одеса
                                             option(value="Kyiv") Київ
                                             option(value="Vinnica") Вінниця 
                                     .order-input
                                         label.select-label(for="postOffice") Відділення
-                                        select#postOffice(name="citpostOfficey") 
+                                        select#postOffice(name="citpostOfficey").sel-trigger 
                                             option(value="") №1 Небесної сотні 9а
                                             option(value="Kyiv") №2 проспект перемоги
                             .order-part
