@@ -846,6 +846,12 @@
         justify-content: space-between;
         flex-flow: wrap;
     }
+    .cart-page-block .right-part {
+        width: 100%;
+    }
+    .wrap-ware .right-part .btn.btn-green {
+        width: 300px;
+    }
 
 }
 
@@ -1234,11 +1240,15 @@
     
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     .delete-img {
         bottom: auto;
         max-width: 25px;
         right: -31px;
         top: 1px;
+    }
+    .wrap-ware .right-part .btn.btn-green {
+        width: 250px;
+        font-size: 13px;;
     }
 }
