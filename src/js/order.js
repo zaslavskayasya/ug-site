@@ -1,4 +1,4 @@
-console.log('order page');
+// console.log('order page');
 
 var acc = document.getElementsByClassName("accordion");
 var i;

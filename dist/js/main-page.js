@@ -1,10 +1,10 @@
-console.log("only main page");
+// console.log("only main page");
 
 
 let addToCartTrigger = document.querySelector('.add-to-cart');
 
 addToCartTrigger.addEventListener('click', function(e){
-  console.log(e.target);
+  // console.log(e.target);
 })
 
 
@@ -17,7 +17,7 @@ let backYellow = document.querySelector('#back');
 $.fn.moveIt = function(){
   var $window = $(window);
   var instances = [];
-  console.log('tedt')
+  // console.log('tedt');
   
   $(this).each(function(){
     instances.push(new moveItItem($(this)));

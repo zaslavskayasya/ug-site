@@ -1,4 +1,4 @@
-console.log(`Loaded main.js`);
+// console.log(`Loaded main.js`);
 
 
 // header part
@@ -81,10 +81,10 @@ let cartTrigger = document.querySelectorAll('.addToCart');
 
 
 
-console.log(headercartTrigger);
+// console.log(headercartTrigger);
 
 headercartTrigger.forEach((triggerBtn)=>{
-  console.log('for cart');
+  // console.log('for cart');
   triggerBtn.addEventListener('click', (e)=>{
     RightSideCart.classList.add('active');
       overflowDarken.style.opacity = "1";
@@ -109,7 +109,7 @@ cartTrigger.forEach((triggerBtn)=>{
 })
 
 closeRightSidebar2.addEventListener('click', ()=>{
-  console.log('closeeee');
+  // console.log('closeeee');
   RightSideCart.classList.remove('active');
   overflowDarken.style.opacity = "0";
   overflowDarken.style.height = "0";
@@ -152,7 +152,7 @@ if(headerFind){
 };
 
 
-console.log('personal test');
+// console.log('personal test');
 
 let personalCabinetTrigger = document.querySelectorAll('.cabinet-trigger');
 let closeCabinetSidebar = document.querySelector('.closeCabinetSidebar');

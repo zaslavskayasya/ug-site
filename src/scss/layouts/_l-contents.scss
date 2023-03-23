@@ -199,8 +199,8 @@
     }
    
 }
+@media screen and(max-width: 1200px){
 
-@media screen and (max-width: 920px){
     .block-of-first-description{
         flex-direction: column;
     }
@@ -211,15 +211,37 @@
         width: auto;
         max-width: 248px;
     }
+    .block-of-first-description .illustrations-block .img-wr.video-block {
+        margin-right: 25px;
+        width: 100%;
+    }
+    .oil-types .oil-card {
+        width: 313px;
+    }
+    .illustrations-block{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 920px){
     .main-content-container {
         padding: 50px 0;
+    }
+    .img-wr{
+        margin: 0 auto;
     }
     .ways-ul {
         margin-bottom: 60px;
         padding-left: 42px;
     }
-    .oil-types .oil-card {
+    .oil-types {
+        justify-content: center;
+    }
+    .oil-card {
         width: 336px;
+    }
+    .oil-types{
+        margin-bottom: 50px;;
     }
     .block-of-first-description .illustrations-block .img-wr.video-block {
         margin-right: 0px;

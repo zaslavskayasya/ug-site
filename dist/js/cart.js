@@ -1,4 +1,4 @@
-console.log('conntect cart page');
+// console.log('conntect cart page');
 
    
 
@@ -20,16 +20,16 @@ let placeForFinalySumMob  = document.querySelector('.finalSum-mob');
 function calculateQuantity(){
     let counterNumberTotaly = document.querySelectorAll('.counter-number');
     let elemSum = 0;
-    console.log("counterNumberTotaly = " + counterNumberTotaly);
+    // console.log("counterNumberTotaly = " + counterNumberTotaly);
     elemSum  = 0;
     counterNumberTotaly.forEach((elem)=>{
-            console.log(elem.innerHTML);
+            // console.log(elem.innerHTML);
             elemSum += parseInt(elem.innerHTML);
     })
     placeForTotalQuantity.innerHTML = elemSum;
     placeForTotalQuantityMob.innerHTML = elemSum;
     
-    console.log('elemSum  ' + elemSum);
+    // console.log('elemSum  ' + elemSum);
 
 }
 calculateQuantity();
@@ -38,10 +38,10 @@ calculateQuantity();
 function calculateTotalSum(){
     let counterNumberTotaly = document.querySelectorAll('.placeForPrice');
     let elemsSum = 0;
-    console.log("counterNumberTotaly = " + counterNumberTotaly);
+    // console.log("counterNumberTotaly = " + counterNumberTotaly);
     elemsSum  = 0;
     counterNumberTotaly.forEach((elem)=>{
-            console.log(elem.innerHTML);
+            // console.log(elem.innerHTML);
             elemsSum += parseInt(elem.innerHTML);
     })
     placeForTotalSum1.innerHTML = elemsSum;
@@ -49,7 +49,7 @@ function calculateTotalSum(){
     placeForFinalySum2.innerHTML = elemsSum;
     placeForTotalSumMob.innerHTML = elemsSum;
     placeForFinalySumMob.innerHTML = elemsSum;
-    console.log('elemSum  ' + elemsSum);
+    // console.log('elemSum  ' + elemsSum);
 
 }
 calculateTotalSum();
@@ -138,7 +138,7 @@ deleteBlockTrigger.forEach((deleteBlockTrigger)=>{
         calculateQuantity();
         calculateTotalSum();
 
-        console.log('test');
+        // console.log('test');
 
     });
 });
@@ -188,7 +188,7 @@ $('.last-seen').slick({
 
 let selects = document.querySelectorAll('.sel-trigger');
 
-console.log(selects);
+// console.log(selects);
 
 selects.forEach(function(sel, i){
     sel.addEventListener("change", ()=>{

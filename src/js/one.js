@@ -1,4 +1,4 @@
-console.log("one page");
+// console.log("one page");
 
 
 let closeRightSidebar = document.querySelector('.closeRightSidebar');

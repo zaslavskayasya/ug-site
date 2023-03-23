@@ -2,7 +2,7 @@
 
 let selects = document.querySelectorAll('.sel-trigger');
 
-console.log(selects);
+// console.log(selects);
 
 selects.forEach(function(sel, i){
     sel.addEventListener("change", ()=>{
