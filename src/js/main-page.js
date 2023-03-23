@@ -174,4 +174,36 @@ $('.often-find-wrap').slick({
   slidesToScroll: 2,
   margin: 10,
   arrows: false,
-});
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    
+],
+  
+},
+);
