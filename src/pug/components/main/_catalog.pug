@@ -1,7 +1,7 @@
 .catalog-page
     .wrapper
         .content
-            .often-find(class="wow fadeIn" data-wow-delay="0.4s") 
+            .often-find() 
                 h3.h3.catalog-name Yuko
                 ul.brand-popular-wrap.brand-slider 
                     li.brand-popular-item
@@ -66,7 +66,7 @@
                                 | Моторні олії
             .wrp-filters
                 .filter-line
-                    p.filter-header Об рано 
+                    p.filter-header Обрано 
                         span 4000 
                         | товарів
                     .filter-item 
@@ -84,8 +84,8 @@
                         p.filter-item-name В'язкість
                         span.num 
                 .sort-block
-                    .sort-catalog
-                        img.sort-img(src="./img/icons/arrow-down.svg", alt="")
+                    .sort-catalog.custom-select
+                        //- img.sort-img(src="./img/icons/arrow-down.svg", alt="")
                         select#sort(name='sort')                           
                             option(value='cheap') Спочатку дешеві
                             option(value='expensive') Спочатку дорогі

@@ -351,8 +351,8 @@ form.search-bar input {
   display: none;
   font-size: 1em;
   border-radius: 0px;
-  padding: 0 20px;
-  border: 1px solid #ccc;
+  padding: 0 34px 0px 26px;
+  border: 1px solid transparent;
   border-radius: 10px;
   background: #fff;
 }
@@ -382,43 +382,65 @@ form.search-bar input {
 
 }
 
-form.search-bar:hover,
-form.search-bar:valid {
-  width: 200px;
-  cursor: pointer;
-}
+// form.search-bar:hover,
+// form.search-bar:valid {
+//   width: 200px;
+//   cursor: pointer;
+// }
 
-form.search-bar:hover input,
-form.search-bar:valid input {
-  display: block;
-}
+form.search-bar {
+  &.active {
+    width: 200px;
+    cursor: pointer;
+    input{    
+      display: block;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
 
-form.search-bar:hover .fa,
-form.search-bar:valid .fa {
-  background-color: h.$accent-color;
-  color: white;
-  border-radius: 10px;
-
-  .search-icon {
-    fill: #fff;
   }
 }
 
+.search::-ms-clear {
+  width : 0;
+  height: 0;
+}
+// form.search-bar:hover .fa,
+// form.search-bar:valid .fa {
+//   background-color: h.$accent-color;
+//   color: white;
+//   border-radius: 10px;
+
+//   .search-icon {
+//     fill: #fff;
+//   }
+// }
+
+.fa-search{
+  cursor: pointer;
+  transition: 0.3s ease-in all;
+  &:hover{
+    svg{
+      filter: contrast(6)
+
+    }
+  }
+}
 
 form.search-bar a {
   bottom: 0;
   color: #027cc2;
   display: none;
   font-size: 13px;
-  left: -86px;
+  left: 9px;
   position: absolute;
   right: auto;
   text-align: center;
   top: 13px;
-  width: 100%;
+  width: 10px;
 }
 
-form.search-bar:valid a {
+form.active.search-bar:valid a {
   display: block;
 }
 
@@ -436,12 +458,14 @@ form.search-bar:valid a {
   background-position: center center;
   background-size: cover;
   //   margin-right: 40px;;
+  &:hover{
+    filter: contrast(6)
+  }
 }
 
 .person-icon {
   height: 22px;
   display: block;
-  ;
 }
 
 .cbinet-info-popup {
@@ -557,6 +581,9 @@ form.search-bar:valid a {
   background-size: cover;
   position: relative;
   margin-right: 39px;
+  &:hover{
+    filter: contrast(6)
+  }
 }
 
 .cart-amount {

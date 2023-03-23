@@ -16,11 +16,13 @@
 
 .brand-popular-wrap{
     display: flex;;
-    width: 1300px;;
+    width: 100%;
+    margin: 15px auto;
+
 }
 
 .brand-popular-item{
-    max-width: 147px;;
+    max-width: 127px;;
     margin-right: 13px;
     
 }
@@ -86,6 +88,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 20px;
+    padding: 13px 19px 13px 0px;
     option *{
         height: 20px;
     }
@@ -152,7 +155,7 @@ option{
     font-size: 14px;
     line-height: 32px;
     border-radius: 27px;;
-    padding: 13px 19px 13px 29px;
+    padding: 13px 19px 13px 0px;
     width: 247px;
     position: relative;
 }
@@ -227,14 +230,14 @@ option{
 .wrap-catalog-block{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-bottom: 50px;
     .card{
         margin-bottom: 19px;;
         padding-top: 30px;;
-        &:not(:nth-child(4)){
-            margin-right: 19px;;
-        }
+        // &:not(:nth-child(4)){
+        //     margin-right: 19px;;
+        // }
     }
 }
 
@@ -426,8 +429,75 @@ option{
       color: #666666;
     }
   }
+
   
 
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  // background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 12px;
+  width: 26px;
+  height: 0;
+  border: 6px solid transparent;
+  // border-color: #fff transparent transparent transparent;
+  background: url('./../img/icons/arrow-down.svg');
+  background-repeat: no-repeat;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  // border-color: transparent transparent #fff transparent;
+  // width: 10px;
+  // height: 10px;
+  top: 16px;
+  transform: rotate(-180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 
   .cart-right{
@@ -864,7 +934,14 @@ option{
       min-width: auto;
       margin: 0px 10px 10px;
     }
-}
+  }
+  .brand-popular-link {
+    height: 155px;
+    width: 124px;
+  }
+  .brand-popular-img-wrap {
+    height: 88px;
+  }
 }
 
 @media screen and (max-width: 500px){
@@ -907,7 +984,7 @@ option{
   }
   .brand-popular-wrap {
     display: flex;
-    width: 960px;
+
   }
   .filter-header{
     display: block;

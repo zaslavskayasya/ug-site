@@ -43,22 +43,42 @@ overflowDarken.addEventListener('click', ()=>{
 });
 
 
-const clearInput = () => {
-    const input = document.querySelector('.search-bar-input');
-    input.value = "";
-  }
+// const clearInput = () => {
+//     const input = document.querySelector('.search-bar-input');
+//     input.value = "";
+//   }
   
-  const clearBtn = document.getElementById("clear-btn");
-  clearBtn.addEventListener("click", clearInput);
+//   const clearBtn = document.getElementById("clear-btn");
+//   clearBtn.addEventListener("click", clearInput);
 
 
-const searchForm = document.querySelector('.search-bar');
+const searchForm = document.querySelector('.fa-search');
+const closeSearch = document.querySelector('#clear-btn')
+
+searchForm.addEventListener('click', function(){
+  searchForm.parentElement.classList.toggle('active');
+});
+
+
+closeSearch.addEventListener('click', function(){
+  searchForm.parentElement.classList.remove('active');
+});
+
+document.addEventListener( 'click', function(e){
+  // console.log(e.target.closest('.search-bar'));
+  if(!e.target.closest('.search-bar')){
+    searchForm.parentElement.classList.remove('active');
+  }
+
+})
 
 
 let headercartTrigger = document.querySelectorAll('.cart-trigger');
 let closeRightSidebar2 = document.querySelector('.closeRightSidebar2');
 let RightSideCart = document.querySelector('.cart-right');
 let cartTrigger = document.querySelectorAll('.addToCart');
+
+
 
 
 console.log(headercartTrigger);
