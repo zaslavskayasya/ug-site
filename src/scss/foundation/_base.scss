@@ -14,13 +14,13 @@ body {
    position: relative;
 }
 
-html, body {
+html{
   overflow-x: hidden;
 }
 
 .wrapper{
   // overflow-x: hidden;
-  // position: relative;
+  position: relative;
 }
 
 body.active-left{
