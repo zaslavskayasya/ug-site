@@ -23,7 +23,14 @@
       border: 3px solid #fff;
     }
   }
+  &.no-line{
+    &:after{
+      border-bottom: none;;
+    }
+  }
 }
+
+
 
 .menu-line {
   height: 108px;
