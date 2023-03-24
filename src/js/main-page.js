@@ -8,8 +8,6 @@ addToCartTrigger.addEventListener('click', function(e){
 })
 
 
-
-
 let carImg= document.querySelector('#car');
 let backMechanic= document.querySelector('#machanism');
 let backYellow = document.querySelector('#back');
