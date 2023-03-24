@@ -894,7 +894,10 @@ form.active.search-bar:valid a {
     position: absolute;
     top: 81px;
   }
+  .l-header.main-header {
 
+    padding-bottom: 28px;
+}
   .brands-line-name{
     display: block;
     text-align: left;
@@ -992,6 +995,11 @@ form.active.search-bar:valid a {
 
 
 @media screen and (max-width: 580px) {
+  .l-header.main-header {
+
+    padding-bottom: 0px;
+}
+  
   .wrp-brand {
       height: 41px;
       margin-right: 5px;
