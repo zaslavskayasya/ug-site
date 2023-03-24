@@ -8,7 +8,7 @@
     content: "";
     display: block;
     height: 2px;
-    width: 95%;
+    width: 94%;
     position: absolute;
     bottom: 0px;
     left: 47px;
@@ -757,19 +757,6 @@ form.active.search-bar:valid a {
     display: flex;
     flex-flow: wrap;
   }
-
-  // .menu-line {
-  //   display: flex;
-  //   height: auto;
-  //   padding-top: 20px;
-  //   padding-bottom: 20px;
-  // }
-
-  // .left-menu,
-  // .menu-line {
-  //   align-items: flex-start;
-  // }
-
   .open-menu {
     height: 22px;
     margin-right: 40px;
@@ -777,34 +764,23 @@ form.active.search-bar:valid a {
     margin-top: 11px;
   }
 
-  // .brands-line {
-  //   position: absolute;
-  //   top: 81px;
-  // }
-
-  // .menu-line {
-  //   padding-bottom: 105px;
-  // }
-  // .brands-line{
-  //   justify-content: space-between;
-  // }
-  .brands-line-name{
-    // display: none;
-    width: 100%;
-  }
-  .brands-line{
-    justify-content: flex-start;
-    flex-flow: wrap;
-  }
   .brands-line-name {
-    margin-right: 4px;
-    padding-left: 20px;
-    padding-top: 9px;
+    margin-right: 14px;
+    width: 61px;
+    text-align: left;;
+    line-height: 16px;;
   }
-  .brands-line {
-    flex-flow: wrap;
-    justify-content: flex-start;
-    width: 78%;
+
+  .top-margin svg {
+    margin-top: -8px;
+  }
+  .wrp-brand {
+    max-width: 152px;
+    &.opet{
+      svg{
+        max-width: 100px;;
+      }
+    }
   }
 }
 
@@ -837,10 +813,6 @@ form.active.search-bar:valid a {
 
 @media screen and (max-width: 1090px){
 
-  .brands-line {
-
-    width: 63%;
-}
 
   .l-header:after{
     // display: none;
@@ -866,7 +838,14 @@ form.active.search-bar:valid a {
 }
 }
 
-
+@media screen and (max-width: 980px){
+  .wrp-brand {
+    margin-right: 0px;
+  }
+  .brands-line-name {
+    width: 65px;
+}
+}
 
 @media screen and (max-width: 920px) {
   .personal-cabinet {
@@ -900,9 +879,13 @@ form.active.search-bar:valid a {
 }
 
 @media screen and (max-width: 890px){
-  .brands-line{
-    width: 69%;
+  .wrp-brand{
+    max-width: 96px;
+    padding: 5px 6px;
   }
+  .top-margin svg {
+    margin-top: -12px;
+}
 }
 
 
@@ -921,10 +904,10 @@ form.active.search-bar:valid a {
   // }
 
   .l-header:after {
-    bottom: -68px;
+    bottom: -37px;
     height: 2px;
     left: 47px;
-    width: 86%;
+    width: 88%;
   }
   .l-header{
     margin-bottom: 31px;;
@@ -933,9 +916,11 @@ form.active.search-bar:valid a {
         padding-bottom: 72px;
 
   }
-  .brands-line {
-    width: 100%
+  .brands-line-name{
+    width: auto;
   }
+  
+
 }
 
 @media screen and (max-width: 780px) {
@@ -1070,7 +1055,7 @@ form.active.search-bar:valid a {
   }
   .l-header:after {
     border-bottom: 1px solid #bebebe;
-    bottom: 9px;
+    bottom: 28px;
     content: "";
     display: block;
     height: 2px;
