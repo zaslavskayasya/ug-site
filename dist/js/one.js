@@ -25,7 +25,7 @@ closeRightSidebar.addEventListener('click', ()=>{
   overflowDarken.style.opacity = "0";
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none"; 
-   body.style.overflowY = "auto";
+   body.style.overflowY = "initial";
    body.style.height = "initial";
    body.classList.remove("active-right")  ; 
 
@@ -36,7 +36,7 @@ overflowDarken.addEventListener('click', ()=>{
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
     body.style.height = "initial";
-   body.style.overflowY = "auto";
+   body.style.overflowY = "initial";
    body.classList.remove("active-right")  ; 
   
 });

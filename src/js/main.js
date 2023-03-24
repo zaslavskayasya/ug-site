@@ -32,7 +32,7 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
     overflowDarken.style.opacity = "0";
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";
-    body.style.overflowY = "auto";
+    body.style.overflowY = "initial";
     body.classList.remove("active-left")  ;  
 
 });
@@ -43,7 +43,7 @@ overflowDarken.addEventListener('click', ()=>{
   overflowDarken.style.height = "0";
   overflowDarken.style.opacity = "0";
   overflowDarken.style.pointerEvents  = "none";
-  body.style.overflowY = "auto";
+  body.style.overflowY = "initial";
   body.classList.remove("active-left")  ;  
 
 });
@@ -133,7 +133,7 @@ closeRightSidebar2.addEventListener('click', ()=>{
   overflowDarken.style.opacity = "0";
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none";    
- body.style.overflowY = "auto";
+ body.style.overflowY = "initial";
  body.style.height = "initial";
  body.classList.remove('active-right');
 });
@@ -143,7 +143,7 @@ overflowDarken.addEventListener('click', ()=>{
     overflowDarken.style.opacity = "0";
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
-   body.style.overflowY = "auto";
+   body.style.overflowY = "initial";
    body.style.height = "initial";
    body.classList.remove('active-right');
   
@@ -219,7 +219,7 @@ if(!headerFind){
       overflowDarken.style.opacity = "0";
       overflowDarken.style.height = "0";
       overflowDarken.style.pointerEvents  = "none"; 
-       body.style.overflowY = "auto";
+       body.style.overflowY = "initial";
        body.style.height = "initial";
        body.classList.remove("active-right")  ;  
   });
@@ -230,7 +230,7 @@ if(!headerFind){
     overflowDarken.style.opacity = "0";
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
-   body.style.overflowY = "auto";
+   body.style.overflowY = "initial";
    body.style.height = "initial";
    body.classList.remove("active-right")  ;  
   
