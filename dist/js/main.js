@@ -49,13 +49,13 @@ overflowDarken.addEventListener('click', ()=>{
 });
 
 
-// const clearInput = () => {
-//     const input = document.querySelector('.search-bar-input');
-//     input.value = "";
-//   }
+const clearInput = () => {
+    const input = document.querySelector('.search-bar-input');
+    input.value = "";
+  }
   
-//   const clearBtn = document.getElementById("clear-btn");
-//   clearBtn.addEventListener("click", clearInput);
+  const clearBtn = document.getElementById("clear-btn");
+  clearBtn.addEventListener("click", clearInput);
 
 
 const searchForm = document.querySelector('.fa-search');
@@ -63,12 +63,11 @@ const closeSearch = document.querySelector('#clear-btn')
 
 searchForm.addEventListener('click', function(){
   searchForm.parentElement.classList.toggle('active');
+
 });
 
 
-closeSearch.addEventListener('click', function(){
-  searchForm.parentElement.classList.remove('active');
-});
+
 
 let flag = false;
 
@@ -84,7 +83,7 @@ document.addEventListener( 'click', function(e){
       flag = false;
       return
     }
-    console.log('TEST');
+    // console.log('TEST');
     flag = true;
   }
 
@@ -109,6 +108,7 @@ headercartTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
+      body.style.height = "100vh";
       body.classList.add('active-right');
   });
 
@@ -121,6 +121,7 @@ cartTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
+      body.style.height = "100vh";
       body.classList.add('active-right');
   });
 
@@ -133,6 +134,7 @@ closeRightSidebar2.addEventListener('click', ()=>{
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none";    
  body.style.overflowY = "auto";
+ body.style.height = "initial";
  body.classList.remove('active-right');
 });
 
@@ -142,6 +144,7 @@ overflowDarken.addEventListener('click', ()=>{
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
    body.style.overflowY = "auto";
+   body.style.height = "initial";
    body.classList.remove('active-right');
   
 });
@@ -204,6 +207,7 @@ if(!headerFind){
         overflowDarken.style.opacity = "1";
         overflowDarken.style.height = "100rem";
         overflowDarken.style.pointerEvents  = "initial"; 
+        body.style.height = "100vh";
         body.style.overflowY = "hidden"; 
         body.classList.add("active-right")  ;  
     });
@@ -216,6 +220,7 @@ if(!headerFind){
       overflowDarken.style.height = "0";
       overflowDarken.style.pointerEvents  = "none"; 
        body.style.overflowY = "auto";
+       body.style.height = "initial";
        body.classList.remove("active-right")  ;  
   });
   
@@ -226,6 +231,7 @@ if(!headerFind){
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
    body.style.overflowY = "auto";
+   body.style.height = "initial";
    body.classList.remove("active-right")  ;  
   
   });

@@ -12,6 +12,7 @@ rightFilterTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden";
+      body.style.height = "100vh";
       body.classList.add("active-right")  ;  
 
     //find data-attr on clicked element
@@ -45,6 +46,7 @@ closeRightSidebar.addEventListener('click', ()=>{
         mi.classList.remove('open');    
    }) ;
    body.style.overflowY = "auto";
+   body.style.height = "initial";
    body.classList.remove("active-right")  ;  
 
 });
@@ -58,6 +60,8 @@ overflowDarken.addEventListener('click', ()=>{
         mi.classList.remove('open');    
    }) ;
    body.style.overflowY = "auto";
+   body.style.height = "initial";
+   
    body.classList.remove("active-right")  ;  
   
   });
@@ -117,7 +121,7 @@ overflowDarken.addEventListener('click', ()=>{
   
           },
         720: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 12,
   
           },
@@ -135,7 +139,7 @@ overflowDarken.addEventListener('click', ()=>{
   
           },
         1300: {
-            spaceBetween:22,
+            spaceBetween:8,
             slidesPerView: 8,
 
           }

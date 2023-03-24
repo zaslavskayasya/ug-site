@@ -13,6 +13,7 @@ rightFilterTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.opacity = "1";
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
+      body.style.height = "100vh";
       body.style.overflowY = "hidden"; 
       body.classList.add("active-right")  ; 
   });
@@ -25,6 +26,7 @@ closeRightSidebar.addEventListener('click', ()=>{
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none"; 
    body.style.overflowY = "auto";
+   body.style.height = "initial";
    body.classList.remove("active-right")  ; 
 
 });
@@ -33,6 +35,7 @@ overflowDarken.addEventListener('click', ()=>{
     overflowDarken.style.opacity = "0";
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
+    body.style.height = "initial";
    body.style.overflowY = "auto";
    body.classList.remove("active-right")  ; 
   
