@@ -92,54 +92,116 @@ overflowDarken.addEventListener('click', ()=>{
           }
       });
   });
-  
 
-$('.brand-slider').slick({
-    dots: false,
-    infinite: true,
-    slidesToShow: 7,
-    slidesToScroll:4,
-    margin: 10,
-    arrows: false,    
-    responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: false
-          }
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    spaceBetween: 7,
+    slidesPerView: 2,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 4,
+  
+          },
+        340: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+
         },
-        {
-            breakpoint: 890,
-            settings: {
-              slidesToShow: 5,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: false,
-            }
+        520: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+  
           },
-          {
-            breakpoint: 650,
-            settings: {
-              slidesToShow:4,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: false,
-            }
+        720: {
+            slidesPerView: 5,
+            spaceBetween: 12,
+  
           },
-          {
-            breakpoint: 365,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false,
-            }
+          920: {
+            slidesPerView: 6,
+            spaceBetween: 12,
+  
           },
-    ],
-  });
+        // when window width is >= 480px
+        // when window width is >= 640px
+
+        1100: {
+            slidesPerView: 6,
+            spaceBetween: 7,
+  
+          },
+        1300: {
+            spaceBetween:22,
+            slidesPerView: 8,
+
+          }
+      },
+  
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+   
+  }); 
+
+// $('.brand-slider').slick({
+//     dots: false,
+//     infinite: true,
+//     slidesToShow: 7,
+//     slidesToScroll:4,
+//     margin: 10,
+//     arrows: false,    
+//     responsive: [
+//         {
+//           breakpoint: 1200,
+//           settings: {
+//             slidesToShow: 5,
+//             slidesToScroll: 2,
+//             infinite: true,
+//             dots: false
+//           }
+//         },
+//         {
+//             breakpoint: 890,
+//             settings: {
+//               slidesToShow: 5,
+//               slidesToScroll: 2,
+//               infinite: true,
+//               dots: false,
+//             }
+//           },
+//           {
+//             breakpoint: 650,
+//             settings: {
+//               slidesToShow:4,
+//               slidesToScroll: 2,
+//               infinite: true,
+//               dots: false,
+//             }
+//           },
+//           {
+//             breakpoint: 365,
+//             settings: {
+//               slidesToShow: 3,
+//               slidesToScroll: 1,
+//               infinite: true,
+//               dots: false,
+//             }
+//           },
+//     ],
+//   });
   
   
   

@@ -8,7 +8,7 @@
     content: "";
     display: block;
     height: 2px;
-    width: 94%;
+    width: 95%;
     position: absolute;
     bottom: 0px;
     left: 47px;
@@ -582,7 +582,14 @@ form.active.search-bar:valid a {
   position: relative;
   margin-right: 39px;
   &:hover{
-    filter: contrast(6)
+       filter: contrast(5);
+       .cart-amount{
+        filter: contrast(0.2);
+       }
+    // backdrop-filter: contrast(6);
+
+    // &:not(.cart-amount){
+    // }
   }
 }
 
