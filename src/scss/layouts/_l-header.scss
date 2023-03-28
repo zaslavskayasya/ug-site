@@ -33,24 +33,24 @@
 
 
 .menu-line {
-  height: 108px;
+  // height: 108px;
   display: flex;
   justify-content: space-between;
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
   text-align: center;
   align-items: center;
-  padding: 0 43px 0 50px;
+  padding: 0 55px 0 28px;
   position: relative;
   // background: #fff;
 
 }
 
 .open-menu {
-  height: 22px;
-  width: 31px;
+  height: 16px;
+  width: 20px;
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 27px;
 
   &:hover {
     span {
@@ -71,18 +71,30 @@
     border-top-left-radius: 1px;
 
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
   }
 }
-
+.wrap-logo{
+  height: 73px;
+  // margin-right: 53px;
+  width: 90px;
+  background: #fb000e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo-link {
-  width: 55px;
-  height: 44px;
-  margin-right: 53px;
+  // height: 100%;
+  // margin-right: 53px;
+  // width: 90px;
+  // background: red;
+  // display: block;
+  display: block;
+  max-width: 90px;;
 
   img {
-    width: 100%
+    width: 60px
   }
 }
 
@@ -115,16 +127,20 @@
 
 .wrp-brand {
   height: 73px;
-  margin-right: 19px;
+  margin-right: 7px;
   transition: 0.3s ease all;
   padding: 10px 15px;
   border-radius: 10px;
+  max-width: 112px;
   &.kramer {
-    svg {
-      max-width: 212px;
-      height: 61px;;
-    }
+    max-width: 160px;;
 
+  }
+  &.wolw{
+    max-width: 170px;
+  }
+  &.uko{
+    max-width: 150px;;
   }
 
   img {
@@ -723,19 +739,7 @@ form.active.search-bar:valid a {
 }
 
 
-@media screen and (max-width: 1650px) {
-  .logo-link {
-    margin-right: 33px;
-  }
 
-  .brands-line-name {
-    margin-right: 4px;
-  }
-
-  .wrp-brand {
-    margin-right: 5px;
-  }
-}
 
 @media screen and (max-width: 1500px) {
   .menu-illustrations {
@@ -744,14 +748,6 @@ form.active.search-bar:valid a {
 
   .inform-banner:before {
     left: 7px;
-  }
-
-  .wrp-brand {
-    max-width: 185px;
-
-    svg {
-      max-width: 100%;
-    }
   }
 
 
@@ -781,14 +777,7 @@ form.active.search-bar:valid a {
   .top-margin svg {
     margin-top: -8px;
   }
-  .wrp-brand {
-    max-width: 152px;
-    &.opet{
-      svg{
-        max-width: 100px;;
-      }
-    }
-  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -808,14 +797,23 @@ form.active.search-bar:valid a {
 }
 
 @media screen and(max-width: 1150px){
-  .brands-line{
-    flex-flow: wrap;
-    // width: 400px;
+//   .brands-line{
+//     flex-flow: wrap;
+//     // width: 400px;
+//   }
+//   .wrp-brand {
+//     max-width: 143px;
+// }
+  .menu-line{
+    padding: 0 27px 0 27px
   }
-  .wrp-brand {
-    max-width: 143px;
-}
 
+  form.search-bar {
+    right: 116px;
+  }
+  .brands-line {
+    margin-left: -65px;
+  }
 }
 
 @media screen and (max-width: 1090px){
@@ -833,22 +831,29 @@ form.active.search-bar:valid a {
       top:40px;
     }
   }
-  .wrp-brand {
-    max-width: 110px;
-    height: 50px;
-}
-.top-margin {
-  svg{
 
-    margin-top: -17px;
+}
+
+@media screen and(max-width: 1023px){
+  .wrp-brand {
+    max-width: 99px;
+    margin-right: 0px;;
+
+  }
+  .wrp-brand.wolw {
+    max-width: 149px;
+  }
+  .wrp-brand.uko {
+    max-width: 125px;
+  }
+  .wrp-brand.kramer {
+    max-width: 141px;
   }
 }
-}
+
 
 @media screen and (max-width: 980px){
-  .wrp-brand {
-    margin-right: 0px;
-  }
+
   .brands-line-name {
     width: 65px;
 }
@@ -867,40 +872,61 @@ form.active.search-bar:valid a {
   .search-btn {
     left: 8px;
   }
-  .wrp-brand {
-    margin-right: 0px;
-  }
-  // .menu-line {
-  //   padding: 20px 15px 165px;
-  //   height: 70px;
-
-  // }
 
   .l-header.no-margin-bottom {
     margin-bottom: 0px;
   }
-  .logo-link {
-    margin-right: 10px;
+  .cart-icon {
+    margin-right: 33px;
   }
 
 }
 
-@media screen and (max-width: 890px){
-  .wrp-brand{
-    max-width: 96px;
-    padding: 5px 6px;
-  }
-  .top-margin svg {
-    margin-top: -12px;
+.namebrands{
+  display: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
 }
+@media screen and (max-width: 900px){
+  .brands-line {
+    margin-left: 0;
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .menu-line {
+    flex-flow: wrap;
+  }
+  .l-header.main-header {
+    background-color: transparent;
+  }
+  .brands-line {
+    justify-content: flex-start;
+    margin-left: 0;
+    order: 3;
+    width: 100%;
+    flex-flow: wrap;
+  }
+  .namebrands{
+    display: block;
+    // width: 100%;
+    text-align: left;
+  }
+  .l-header.main-header .cart-amount {
+    border: 3px solid #eee;
+  }
+  .wrap-logo {  
+    height: 54px;
+    width: 74px;
+    margin: 8px 0px 0px 0px;
+  }
 }
 
 
 @media screen and (max-width: 860px){
-  .brands-line {
-    position: absolute;
-    top: 81px;
-  }
+
   .l-header.main-header {
 
     padding-bottom: 28px;
@@ -909,9 +935,6 @@ form.active.search-bar:valid a {
     display: block;
     text-align: left;
   }
-  // .menu-line {
-  //   padding-bottom: 105px;
-  // }
 
   .l-header:after {
     bottom: -37px;
@@ -932,42 +955,19 @@ form.active.search-bar:valid a {
 
 @media screen and (max-width: 780px) {
   .sidenav {
-    // width: 100%;
     z-index: 9999999;
   }
-
-
-  // .menu-line {
-  //   background-color: transparent;
-  //   height: 60px;
-  //   margin-bottom: 15px;
-  // }
 
   .cart-amount {
     border: 3px solid #eee;
   }
 
   .l-header {
-    // position: sticky;
+    
     top: 0px;
     z-index: 9999;
-    /* border-bottom: 1px solid #ccc; */
-    // box-shadow: -3px 4px 15px #cccccc42;
+
   }
-  // .brands-line-name{
-  //   width: 100%;
-  // }
-  // .brands-line {
-  //   flex-flow: wrap;
-  //   justify-content: flex-start;
-  // }
-  // .wrp-brand {
-  //   max-width: 185px;
-  //   width: 135px;
-  //   height: 52px;
-  //   margin-right: 5px;
-  //   padding: 1px 7px;
-  // }
 
 }
 
@@ -977,33 +977,20 @@ form.active.search-bar:valid a {
   }
 }
 
-@media screen and(max-width:660px){
-  .brands-line {
-    justify-content: flex-start;
-}
-  .wrp-brand {
-    max-width: 105px;
-    width: 105px;
-    height: 52px;
-    margin-right: 5px;
-    padding: 1px 7px;
+
+@media screen and (max-width: 710px){
+  .namebrands{
+    width: 100%;
+    margin-top: 15px;;
   }
-  .wrp-brand {
-    height: 47px;
-    margin-right: 3px;
-    max-width: 105px;
-    padding: 1px 4px;
-    width: 85px;
-}
-.top-margin svg {
-  margin-top: -10px;
-}
+  .wrp-brand.opet{
+    margin-left: -1px;;
+  }
 }
 
 
 @media screen and (max-width: 580px) {
   .l-header.main-header {
-
     padding-bottom: 0px;
 }
   
@@ -1014,9 +1001,9 @@ form.active.search-bar:valid a {
       padding: 7px 2px;
       width: 80px;
   }
-  .brands-line-name{
-    padding-left: 8px;;
-  }
+  // .brands-line-name{
+  //   padding-left: 8px;;
+  // }
   .open-menu {
     height: 22px;
     margin-right: 20px;
@@ -1029,38 +1016,30 @@ form.active.search-bar:valid a {
   }
   .right-menu-info {
     justify-content: flex-end;
-    position: absolute;
+    // position: absolute;
     right: 15px;
     padding-top: 9px;
   }
-  .menu-line {
-    height: 70px;
-    padding: 36px 15px 152px;
-  }
+  // .menu-line {
+  //   height: 70px;
+  //   padding: 36px 15px 152px;
+  // }
   form.search-bar{
-    right: 75px;
+    right: 102px;
   }
-
+  .open-menu{
+    width: 23px;
+  }
   .top-margin {
     margin-top: -5px;
   }
-  .wrp-brand.kramer svg {
-    height: 34px;
+  .wrap-logo {
+    height: 46px;
+    margin: 8px 0 0;
+    width: 67px;
   }
-  .brands-line{
-
-    justify-content: flex-start;
-  }
-  .menu-line {
-    // height: 70px;
-    padding: 36px 15px 138px;
-    }
-    .brands-line-name {
-      display: block;
-      width: 100%;
-      font-weight: 700;
-      text-align: left;
-      
+  .wrp-brand.opet {
+    margin-left: -8px;
   }
   .top-margin svg {
     margin-top: -3px;
@@ -1078,16 +1057,41 @@ form.active.search-bar:valid a {
   .brands-line {
     // position: absolute;
     top: 75px;
-  }
+  } 
   .l-header {
     margin-bottom: 6px;
-}
-
+  }
+  .wrp-brand.opet {
+    width: 55px;
+  }
+  .wrp-brand.uko {
+    max-width: 62px;
+  }
+  .wrp-brand.kramer {
+    max-width: 74px;
+  }
+  .logo-link img {
+    width: 36px;
+    }
+    .wrap-logo {
+      height: 40px;
+      margin: 8px 0 0;
+      width: 58px;
+    }
 }
 
 
 @media screen and (max-width: 368px){
-  .wrp-brand {
-    width: 70px;
+  .wrp-brand.opet {
+    width: 50px;
   }
+  .wrp-brand.uko {
+    max-width: 58px;
+  }
+  .wrp-brand.kramer {
+    max-width: 68px;
+  }
+  .wrp-brand.wolw {
+    max-width: 71px;
+}
 }

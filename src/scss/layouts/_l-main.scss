@@ -465,10 +465,15 @@
   .right-prom{
     margin-right: 0px;;
   }
-
+  .h-24 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 670px){
+  .h1 {
+    font-size: 33px;
+  }
   .wrap-main-screen {
     padding: 2px 0 100px;
   }
@@ -661,6 +666,10 @@
     height: 271px;
     margin-bottom: 16px;
     padding: 52px 16px;
+  }
+  .l-main .h-24 {
+    margin-bottom: 24px;
+    max-width: 300px;
   }
 
 }
