@@ -14,13 +14,13 @@
   //   left: 47px;
   //   border-bottom: 1px solid #BEBEBE;
   // }
+  background-color: #fff;
+  .cart-amount{
+    border: 3px solid #fff;
+  }
   &.main-header{
-    background-color: #fff;
     &:after{
       border-bottom: none;;
-    }
-    .cart-amount{
-      border: 3px solid #fff;
     }
   }
   &.no-line{
@@ -130,8 +130,11 @@
   margin-right: 7px;
   transition: 0.3s ease all;
   padding: 10px 15px;
-  border-radius: 10px;
+  // border-radius: 10px;
   max-width: 112px;
+  &.active{
+    border-bottom: 2px solid #fb000e;
+  }
   &.kramer {
     max-width: 160px;;
 
@@ -891,25 +894,25 @@ form.active.search-bar:valid a {
   line-height: 32px;
 }
 @media screen and (max-width: 900px){
-  .brands-line {
-    margin-left: 0;
-    order: 3;
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .menu-line {
-    flex-flow: wrap;
-  }
-  .l-header.main-header {
-    background-color: transparent;
-  }
-  .brands-line {
-    justify-content: flex-start;
-    margin-left: 0;
-    order: 3;
-    width: 100%;
-    flex-flow: wrap;
-  }
+  // .brands-line {
+  //   margin-left: 0;
+  //   order: 3;
+  //   width: 100%;
+  //   justify-content: flex-start;
+  // }
+  // .menu-line {
+  //   flex-flow: wrap;
+  // }
+  // .l-header.main-header {
+  //   background-color: transparent;
+  // }
+  // .brands-line {
+  //   justify-content: flex-start;
+  //   margin-left: 0;
+  //   order: 3;
+  //   width: 100%;
+  //   flex-flow: wrap;
+  // }
   .namebrands{
     display: block;
     // width: 100%;
@@ -923,6 +926,24 @@ form.active.search-bar:valid a {
     width: 74px;
     margin: 8px 0px 0px 0px;
   }
+  .wrp-brand{
+    .opet {
+      max-width: 78px;
+    }
+    }
+    .wrp-brand.wolw {
+      max-width: 123px;
+    }
+    .wrp-brand.uko {
+      max-width: 109px;
+    }
+
+    .wrp-brand.kramer {
+      max-width: 129px;
+  }
+
+
+
 }
 
 
@@ -953,6 +974,27 @@ form.active.search-bar:valid a {
   
 
 }
+
+@media screen and (max-width: 800px){
+  .menu-line {
+    flex-flow: wrap;
+  }
+  .wrp-brand {
+    height: 57px;
+    margin-right: 7px;
+    max-width: 112px;
+    padding: 3px 7px;
+  }
+  .brands-line {
+    justify-content: center;
+    margin-left: 0;
+    order: 3;
+    width: 100%;
+    flex-flow: wrap;
+  }
+}
+
+
 
 @media screen and (max-width: 780px) {
   .sidenav {
