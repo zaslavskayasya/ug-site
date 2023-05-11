@@ -196,10 +196,11 @@ body.active-right{
       display: -moz-box;
       -moz-box-orient: vertical;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
-      line-clamp: 2;
+      line-clamp: 3;
       box-orient: vertical;
+      height: 68px;
   }
   .bottom-info {
     display: flex;
@@ -386,9 +387,10 @@ body.active-right{
     .card .card-name {
       font-size: 10px;
       line-height: 15px;
+      height:42px;
     }
     .card .card-img-wrap {
-      margin: 15px auto 2px;
+      margin: 15px auto 15px;
     }
     .card .prices .new-price {
       font-size: 14px;
