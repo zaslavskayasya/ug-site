@@ -136,6 +136,7 @@ body.active-right{
   position: relative;
   padding: 15px;
   max-width: 281px;
+  width:281px;
   display: block;
   .wraps-tips{
     position: absolute;
@@ -422,6 +423,9 @@ body.active-right{
   //   width: 400px;
   //   margin: 0 auto;
   // }
+  .card .card-img-wrap{
+    max-height: 170px;
+  }
 
 }
 

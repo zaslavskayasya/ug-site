@@ -48,7 +48,7 @@
 }
 .brand-popular-item{
     max-width: 140px;;
-    // margin-right: 13px;
+    margin-right: 7px;
     
 }
 
@@ -92,7 +92,7 @@
 .brand-popular-name{
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 13px;
     text-align: center;
     transition: all ease 0.3s;
@@ -961,7 +961,7 @@ option{
     margin: 6px auto 13px;
   }
   .wrap-catalog-block .card:nth-child(3n){
-    margin-right: 0px;;
+    margin-right: auto;;
   }
 }
 
@@ -1074,8 +1074,10 @@ option{
       width: 611px;
   }
   .wrap-catalog-block .card {
-    margin: 0px 8px 16px;
+    margin: 10px auto;
   }
+  
+
 }
 
 
@@ -1084,14 +1086,6 @@ option{
     width: 432px;
   }
   .wrap-catalog-block .card {
-    min-width: 230px;
-    width: 47%;
-  }
-  .wrap-catalog-block .card {
-    margin: 0 4px 9px;
-  }
-  .wrap-catalog-block .card {
-    margin: 0 4px 9px;
     min-width: 178px;
     width: 47%;
   }
