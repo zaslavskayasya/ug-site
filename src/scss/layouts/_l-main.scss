@@ -35,13 +35,13 @@
 //   }
 
 
-
   #car{
     position: absolute;
     left: auto;
     right: 318px;
     top: 291px;
     // bottom: 0px;
+    pointer-events: none;;
     z-index: 5;
   }
   #machanism{
