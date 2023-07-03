@@ -165,10 +165,20 @@ new WOW().init();
 
 let oftenSlider = document.querySelector('.often-find-wrap');
 
+let often = document.querySelectorAll('.often-find-item');
+let newOften = [...often];
+let oftenLenght = newOften.length
+
+if(oftenLenght >= 8){
+  oftenLenght = 8;
+}
+
+console.log(oftenLenght);
+
 $('.often-find-wrap').slick({
   dots: false,
   infinite: true,
-  slidesToShow: 8,
+  slidesToShow: oftenLenght,
   slidesToScroll: 2,
   margin: 10,
   arrows: false,
